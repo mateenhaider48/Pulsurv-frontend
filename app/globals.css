@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  /* --background: #ffffff;
+  --foreground: #171717; */
+}
+
+@theme inline {
+  /* --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+
+  /* Custom color palette used as:
+     - bg-custom-primary, text-custom-primary, border-custom-primary, etc.
+     - bg-custom-secondary, text-custom-secondary, border-custom-secondary, etc.
+     - bg-custom-dark-grey, text-custom-dark-grey, border-custom-dark-grey, etc.
+  */
+  --color-custom-primary: #07233b;
+  --color-custom-secondary: #F3704B;
+  --color-custom-dark-grey: #333333;
+  --color-custom-white: #ffffff;
+  --color-custom-red: #ff0000;
+}
+
+@layer utilities {
+  .bg-custom-primary {
+    background-color: var(--color-custom-primary);
+  }
+  
+  .text-custom-secondary {
+    color: var(--color-custom-secondary);
+  }
+
+  .text-custom-dark-grey {
+    color: var(--color-custom-dark-grey);
+  }
+
+  .border-custom-dark-grey {
+    border-color: var(--color-custom-dark-grey);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+  }
+}
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+}
