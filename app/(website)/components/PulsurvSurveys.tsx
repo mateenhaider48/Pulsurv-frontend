@@ -22,7 +22,7 @@ export default function PulsurvSurveys() {
           </p>
           <div className="flex gap-8 pt-8">
             <Button
-              className="w-48 h-12 rounded-[8px] bg-custom-primary pt-8 pb-8 pl-8 pr-8 leading-normal font-500 text-custom-white "
+              className="w-48 h-12 rounded-[8px] bg-custom-primary pt-4 pb-4 pl-8 pr-8 leading-normal font-500 text-custom-white "
               children="Get Started"
             />
             <Button

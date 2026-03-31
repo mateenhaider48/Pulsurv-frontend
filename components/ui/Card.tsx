@@ -28,7 +28,7 @@ export const Card = ({
   const medium = size === "medium" ? "mt-2" : "";
   return (
     <div
-      className={`${className}   rounded-[16px] border ${size === "medium" ? "mt-8" : size === "xl" ? "" : size === "sm" ? "" : "group hover:border-custom-secondary"}  border-custom-dark-grey/30 group transition-colors duration-300`}
+      className={`${className}   rounded-[16px] border ${size === "medium" ? "mt-8 ml-16" : size === "xl" ? "" : size === "sm" ? "" : "group hover:border-custom-secondary"}  border-custom-dark-grey/30 group transition-colors duration-300`}
     >
       <div
         className={`rounded-[10px] ${size === "small" ? "ml-13 mt-4 w-[48px] h-[48px] bg-custom-secondary/20 group-hover:bg-custom-secondary" : size === "xl" ? ` w-[56px] h-[56px]  ${index == 1 ? "ml-30 mt-8 group-hover:bg-custom-primary group-hover:text-custom-white bg-custom-dark-grey/20" : index == 2 ? "ml-20 mt-4 bg-custom-primary text-custom-white " : "bg-custom-secondary/10"}` : size === "base" ? "" : size === "lg" ? " ml-28 mt-4 group-hover:bg-custom-primary bg-custom-dark-grey/20" : "ml-4 mt-4 group-hover:bg-custom-secondary bg-custom-secondary/20  "} flex items-center justify-center transition-colors  duration-300   ${size === "medium" ? "w-[48px] h-[48px] group-hover:bg-custom-secondary" : iconBox}`}
