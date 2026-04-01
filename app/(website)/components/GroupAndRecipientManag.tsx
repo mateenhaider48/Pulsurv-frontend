@@ -6,6 +6,7 @@ import {
   MessageIcon,
   MobileIcon,
   RecipientIcon,
+  TeamIcon,
 } from "@/components/svg-icons";
 import Card from "@/components/ui/Card";
 import React from "react";
@@ -82,8 +83,8 @@ function GroupAndRecipientManagement(props: Props) {
           >
             <div className="flex gap-4 p-3 items-center">
 
-              <div className="w-[48px] h-[48px] rounded-xl bg-custom-dark-grey/10 flex items-center justify-center group-hover:bg-custom-dark-grey/60">
-                <RecipientIcon className="text-custom-dark-grey/90 group-hover:text-custom-white" />
+              <div className="w-12 h-12 rounded-xl bg-custom-dark-grey/10 flex items-center justify-center group-hover:bg-custom-dark-grey/50">
+                <TeamIcon className="text-custom-dark-grey/90 group-hover:text-custom-white" />
               </div>
 
               <div className="flex flex-1 flex-col">

@@ -7,6 +7,7 @@ import {
   EditIcon,
   enhancedIcon,
   ImportIcon,
+  MobileIcon,
   RecipientIcon,
   WebPlatformIcon,
 } from "@/components/svg-icons";
@@ -57,7 +58,7 @@ function PlatformAvailability(props: Props) {
         <p className="font-bold text-lg leading-normal text-center text-custom-white mt-8">
           Available Platforms
         </p>
-        <p className="h-10 w-60 bg-custom-dark-grey/50 rounded-xl flex items-center justify-center text-center mt-4 ml-128">
+        <p className="h-10 w-60 bg-custom-secondary/20 rounded-xl flex items-center justify-center text-center mt-4 ml-128">
           <span className="text-base font-bold text-custom-secondary">
             Support Self-hosting
           </span>
@@ -74,14 +75,14 @@ function PlatformAvailability(props: Props) {
           size="lg"
         />
         <Card
-          icon={androidIcon}
+          icon={MobileIcon}
           title="iOS Mobile App"
           text="Native experience on iPhone and iPad"
           className="w-80 h-44 bg-custom-white"
           size="lg"
         />
         <Card
-          icon={androidIcon}
+          icon={MobileIcon}
           title="Android Mobile App"
           text="Optimized for Android devices"
           className="w-80 h-44 bg-custom-white"

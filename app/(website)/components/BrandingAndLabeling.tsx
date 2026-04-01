@@ -22,7 +22,7 @@ function BrandingAndLabeling(props: Props) {
           icon={Themes}
           title="Base Colors & Themes"
           text="Configure primary and accent colors to match your brand identity"
-          className="w-[345px] h-[230px]"
+          className="w-[345px] h-[200px]"
           size="xl"
           
         />
@@ -30,14 +30,14 @@ function BrandingAndLabeling(props: Props) {
           icon={ImageIcon}
           title="White-Label Branding"
           text="Apply custom logos and remove Pulsurv branding"
-          className="w-[345px] h-[230px]"
+          className="w-[345px] h-[200px]"
           size="xl"
         />
         <Card
           icon={analysisSvg}
           title="Chart Color Palettes"
           text="View visual analytics, AI sentiment analysis, AI-powered insights, and exportable reports."
-          className="w-[345px] h-[230px]"
+          className="w-[345px] h-[200px]"
           size="xl"
         />
       </div>

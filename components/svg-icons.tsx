@@ -122,7 +122,7 @@ export function ArrowIcon({ className }: { className?: string }) {
     <svg
       viewBox="0 0 28 28"
       fill="none"
-      className={`w-3 h-3 mt-1 ${className || ""}`} // 24x24px, color via Tailwind
+      className={`w-8 h-8 ${className || ""}`} // 24x24px, color via Tailwind
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1035,4 +1035,53 @@ export function AccessibilityIcon(){
 </svg>
 
   )
+}
+export function CorrectIcon(){
+  return(
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.0001 19C12.0823 19 14.1001 18.278 15.7096 16.957C17.3192 15.6361 18.4209 13.7979 18.8271 11.7557C19.2333 9.71355 18.9188 7.5937 17.9373 5.75737C16.9557 3.92104 15.3678 2.48187 13.4441 1.68506C11.5204 0.888253 9.37992 0.783114 7.38739 1.38756C5.39486 1.992 3.67355 3.26863 2.51675 4.99992C1.35996 6.73121 0.839253 8.81004 1.04336 10.8822C1.24746 12.9544 2.16375 14.8917 3.63609 16.364" stroke="#F3704B" stroke-width="2" stroke-linecap="round"/>
+<path d="M14 8L10.402 12.318C9.747 13.104 9.419 13.498 8.978 13.518C8.537 13.538 8.175 13.175 7.451 12.451L6 11" stroke="#F3704B" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+  )
+}
+export function TeamIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M13.3337 17.5V15.8333C13.3337 14.9493 12.9825 14.1014 12.3573 13.4763C11.7322 12.8512 10.8844 12.5 10.0003 12.5H5.00033C4.11627 12.5 3.26842 12.8512 2.6433 13.4763C2.01818 14.1014 1.66699 14.9493 1.66699 15.8333V17.5"
+        stroke="currentColor"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path d="M7.50033 9.16667C9.34127 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34127 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z"
+        stroke="currentColor"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path d="M18.333 17.4999V15.8333C18.3325 15.0947 18.0866 14.3773 17.6341 13.7935C17.1817 13.2098 16.5481 12.7929 15.833 12.6083"
+        stroke="currentColor"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path d="M13.333 2.60828C14.05 2.79186 14.6855 3.20886 15.1394 3.79354C15.5932 4.37821 15.8395 5.0973 15.8395 5.83744C15.8395 6.57759 15.5932 7.29668 15.1394 7.88135C14.6855 8.46603 14.05 8.88303 13.333 9.06661"
+        stroke="currentColor"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 }
