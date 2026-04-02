@@ -1,4 +1,5 @@
 import { Analytics, ArrowIcon, CardIcon } from "@/components/svg-icons";
+import Card from "@/components/ui/Card";
 import React from "react";
 
 function WhatPulseEnable() {
@@ -20,8 +21,8 @@ function WhatPulseEnable() {
     },
   ];
   return (
-    <div className="w-full h-[449px] bg-custom-white absolute top-[948px]">
-      <p className="leading-normal font-bold text-2xl text-center text-custom-dark-grey/100 top-[80px]">
+    <div className="w-full h-[449px] bg-custom-white absolute top-[900px]">
+      <p className="leading-normal font-bold text-lg sm:text-2xl text-center text-custom-dark-grey/100 top-[80px]">
         What Pulsurv Enables
       </p>
       <p className="leading-normal font-bold text-sm text-center  text-custom-dark-grey/70">
@@ -37,8 +38,8 @@ function WhatPulseEnable() {
               className="w-[300px] bg-white group border border-t-[0.67px] border-[#E5E7EB] hover:border-custom-secondary rounded-2xl p-6 text-left  transition duration-300"
             >
               {/* Icon */}
-              <div className="mb-4 w-16 h-[64px]">
-                <div className="p-4 bg-custom-dark-grey/10 group-hover:bg-custom-secondary/10 group-hover:bg-custom-secondary rounded-xl">
+              <div className="mb-4 w-16">
+                <div className="p-4 bg-custom-dark-grey/10  group-hover:bg-custom-secondary/10 rounded-xl">
                   <Icon className="text-custom-dark-grey/90 group-hover:text-custom-secondary"/>
                 </div>
               </div>

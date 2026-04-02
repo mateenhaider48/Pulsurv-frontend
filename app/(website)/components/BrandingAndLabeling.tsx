@@ -1,4 +1,11 @@
-import { analysisSvg, Analytics, ArrowIcon, CardIcon, ImageIcon, Themes } from "@/components/svg-icons";
+import {
+  analysisSvg,
+  Analytics,
+  ArrowIcon,
+  CardIcon,
+  ImageIcon,
+  Themes,
+} from "@/components/svg-icons";
 import Card from "@/components/ui/Card";
 import React from "react";
 
@@ -8,41 +15,45 @@ function BrandingAndLabeling(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full h-[920px] py-10 absolute top-[3970px] ">
+    <div className="w-full h-[920px] py-10 absolute top-[4500px] sm:top-[3970px] ">
       <div>
-        <p className="font-bold text-2xl leading-normal text-center text-custom-dark-grey/90 mt-4">
+        <p className="font-bold text-lg sm:text-2xl leading-tight sm:leading-normal text-center text-custom-dark-grey/90 mt-4">
           Branding & White Labelling
         </p>
-        <p className="text-base leading-tight text-center mt-1 text-custom-dark-grey/40">
+        <p className="text-sm sm:text-base leading-tight text-center mt-1 text-custom-dark-grey/40">
           Make Pulsurv truly yours with comprehensive branding controls
         </p>
       </div>
-      <div className="flex items-center ml-20 mt-10 gap-10">
+      <div className="grid grid-cols-1 sm:flex items-center justify-center mt-2 sm:mt-10 gap-2 sm:gap-10">
         <Card
           icon={Themes}
           title="Base Colors & Themes"
           text="Configure primary and accent colors to match your brand identity"
-          className="w-[345px] h-[200px]"
+          className="w-[280px] sm:w-[345px] h-[160px] sm:h-[200px]"
           size="xl"
-          
         />
+
         <Card
           icon={ImageIcon}
           title="White-Label Branding"
           text="Apply custom logos and remove Pulsurv branding"
-          className="w-[345px] h-[200px]"
+          className="w-[280px] sm:w-[345px] h-[160px] sm:h-[200px]"
           size="xl"
         />
+
         <Card
           icon={analysisSvg}
           title="Chart Color Palettes"
           text="View visual analytics, AI sentiment analysis, AI-powered insights, and exportable reports."
-          className="w-[345px] h-[200px]"
+          className="w-[280px] sm:w-[345px] h-[160px] sm:h-[200px]"
           size="xl"
         />
       </div>
       <div>
-        <img src="/images/brandingImg.png" className="h-[631px] ml-10  mt-10 w-[1200px]"/>
+        <img
+          src="/images/brandingImg.png"
+          className="h-[260px] sm:h-[631px] ml-2 sm:ml-10  mt-4 sm:mt-10 w-[300px] sm:w-[1200px]"
+        />
       </div>
     </div>
   );

@@ -8,37 +8,42 @@ function Feedback(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full h-[420px] py-10 absolute top-[6800px] bg-gradient-to-b from-[#E3F1FF] to-white">
+    <div className="w-full sm:h-[420px] py-10 absolute top-[7160px] sm:top-[6800px] bg-gradient-to-b from-[#E3F1FF] to-white">
       <div>
-        <p className="font-bold text-3xl leading-normal text-center text-custom-dark-grey/90 mt-14">
+        <p className="font-bold text-md sm:text-3xl leading-normal text-center text-custom-dark-grey/90 mt-2 sm:mt-14">
           Turn Feedback Into Action with Pulsurv
         </p>
-        <p className="text-base leading-tight  text-center mt-4 text-custom-dark-grey/40">
+        <p className="text-sm sm:text-base leading-tight text-center mt-4 text-custom-dark-grey/40">
           Join forward-thinking organizations using AI-powered pulse surveys to{" "}
-          <br />
+          <br className="hidden sm:block" />
           understand their customers and teams better.
         </p>
       </div>
-      <div className="flex ml-110 mt-4 gap-4 pt-4">
+      <div className="flex  ml-5 sm:ml-110 mt-2 sm:mt-4 gap-2 sm:gap-4 pt-2 sm:pt-4">
         <Button
-          className="w-48 h-12 rounded-lg  pt-4 pb-4 pl-8 pr-8 leading-tight font-500 text-custom-white bg-custom-primary font-base border border-1 border-custom-primary"
+          className="w-36 sm:w-48 h-8 sm:h-12 rounded-lg  py-2 sm:py-4 px-4 sm:px-8 leading-tight font-500 text-custom-white bg-custom-primary font-base border border-1 border-custom-primary"
           children="Get Started "
-          icon={<span className="text-gray-100 ml-4 mb-1 text-2xl font-bold">→</span>}
+          icon={
+            <span className="text-gray-100 ml-2 sm:ml-4 mb-1 text-sm sm:text-2xl font-bold">
+              →
+            </span>
+          }
         />
         <Button
-          className="w-48 h-12 rounded-lg  pt-4 pb-4 pl-8 pr-8 leading-tight font-500 text-custom-secondary  font-base  border border-1 border-custom-secondary"
-          children="View Pricing"/>
+          className="w-30 sm:w-48 h-8 sm:h-12 rounded-lg  py-2 sm:py-4 px-4 sm:px-8 leading-tight font-500 text-custom-secondary  font-base  border border-1 border-custom-secondary"
+          children="View Pricing"
+        />
       </div>
-      <div className="flex ml-110 mt-10 gap-2">
-        <div className="flex items-center ml-8 mt-4 gap-2">
+      <div className="flex ml-4 sm:ml-110 mt-5 sm:mt-10 gap-1 sm:gap-2">
+        <div className="flex items-center ml-4 sm:ml-8 mt-2 sm:mt-4 gap-1 sm:gap-2">
           <DoneIcon />
-          <p className="text-custom-dark-grey/70  text-sm">
+          <p className="text-custom-dark-grey/70  text-[10px] sm:text-sm">
             No credit card required
           </p>
         </div>
-        <div className="flex items-center ml-4 mt-4 gap-2">
+        <div className="flex items-center ml-4 sm:ml-8 mt-2 sm:mt-4 gap-1 sm:gap-2">
           <DoneIcon />
-          <p className="text-custom-dark-grey/70 text-sm">
+          <p className="text-custom-dark-grey/70 text-[10px] sm:text-sm">
             14-day free trial
           </p>
         </div>
@@ -47,4 +52,4 @@ function Feedback(props: Props) {
   );
 }
 
-export default Feedback;  
+export default Feedback;

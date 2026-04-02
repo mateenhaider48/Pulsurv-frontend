@@ -27,7 +27,7 @@ const BAR_COLOR = "#07233b";
 
 export function ResponseDistribution() {
   return (
-    <div className="border h-[300px] w-[516px] rounded-md shadow-md p-4">
+    <div className="h-full w-full rounded-md p-4">
       <p className="text-base font-semibold text-custom-dark-grey/90 mb-2">
         Response Distribution
       </p>
@@ -80,11 +80,11 @@ const pieData = [
   { name: "Negative", value: 10 },
 ];
 
-const COLORS = ["#10B981", "#F3704B", "#EF4444"]; // Green, Orange, Red
+const COLORS = ["#10B981", "#F3704B", "#EF4444"];
 
 export function SentimentDonut() {
   return (
-    <div className="border h-[325px] w-[516px] rounded-md shadow-md p-4">
+    <div className="sm:h-full sm:w-full rounded-md p-4">
       <p className="text-base font-semibold text-custom-dark-grey/90 mb-4">
         Sentiment Analysis
       </p>

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <PulsurvSurveys/>
       <WhatPulseEnable/>
-      <SurveyDistChannels/>
+       <SurveyDistChannels/>
       <AnalyticsAiReporting/>
       <GroupAndRecipientManagement/>
       <BrandingAndLabeling/>
