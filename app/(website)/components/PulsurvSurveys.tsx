@@ -3,11 +3,10 @@ import Button from "@/components/ui/Button";
 
 export default function PulsurvSurveys() {
   return (
-    <div className="max-w-full min-h-screen bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] relative overflow-hidden">
-      <div className="flex flex-col lg:flex-row w-full min-h-screen">
-
+    <div className="w-full max-w-full min-h-screen bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] relative">
+      <div className="flex flex-col w-full max-w-7xl min-h-screen mx-auto">
         {/* Left Content */}
-        <div className="flex flex-col justify-center px-6 sm:px-10 py-12 w-full z-10">
+        <div className="flex flex-col justify-center px-6 sm:px-10 py-12 w-full  z-10">
           <p className="font-bold text-3xl sm:text-6xl  lg:leading-[75px] text-custom-secondary">
             Pulse Surveys{" "}
             <span className="text-custom-dark-grey">
@@ -59,25 +58,7 @@ export default function PulsurvSurveys() {
           </div>
         </div>
 
-        {/* Right Decorative Panel */}
-        <div className="relative w-full lg:ml-auto lg:w-[439px] lg:min-h-full bg-custom-secondary sm:rounded-b-[50px] lg:rounded-b-none lg:rounded-bl-[50px] lg:rounded-br-[20px] h-[300px] sm:h-[400px] lg:h-auto flex-shrink-0 overflow-hidden lg:overflow-visible">
-          <img
-            src="./images/heroSection.png"
-            alt="Hero section"
-            className="
-              absolute
-              w-[90%] sm:w-[400px] lg:w-[562px]
-              h-auto lg:h-[413px]
-              rounded-[8px]
-              z-10
-              top-1/2 -translate-y-1/2
-              left-1/2 -translate-x-1/2
-              lg:top-[80px] lg:translate-y-0
-              lg:-left-[100px] lg:translate-x-0
-            "
-          />
-        </div>
-
+         
       </div>
     </div>
   );

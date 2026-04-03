@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 import React from "react";
 
 interface PricingPlan {
-  popular?:string;  
+  popular?: string;
   title: string;
   text: string;
   priceMonth: string;
@@ -36,7 +36,7 @@ function PricingCards() {
       ],
     },
     {
-      popular:"Most Popular",  
+      popular: "Most Popular",
       title: "Professional",
       text: "For growing teams that need advanced analytics and branding",
       priceMonth: "149",
@@ -79,59 +79,65 @@ function PricingCards() {
   ];
 
   return (
-    <div className="w-full  py-16  absolute top-[350px]">
-      <div className="flex flex-wrap justify-center mt-6 gap-6">
+    <div className="w-full  py-4 sm:py-16  absolute top-[350px]">
+      <div className="flex flex-wrap justify-center mt-3 gap-3 sm:mt-6 sm:gap-6">
         {cards.map((item, index) => (
           <div
             key={index}
-            className="w-[350px] p-6 border border-gray-200 bg-white shadow-2xl rounded-2xl group hover:bg-custom-primary transition-all duration-150 delay-150 hover:scale-105 hover:border-2 hover:border-custom-secondary hover:shadow-lg transition"
+            className="w-[280px] sm:w-[350px] p-3 sm:p-6 border border-gray-200 bg-white shadow-2xl rounded-2xl group hover:bg-custom-primary transition-all duration-150 delay-150 hover:scale-105 hover:border-2 hover:border-custom-secondary hover:shadow-lg transition"
           >
-           { item.popular && (
-            <div className="bg-custom-primary  duration-150 delay-150  ml-22 group-hover:bg-custom-secondary text-white text-xs font-bold py-1 px-3 rounded-full inline-block mb-4">
-              {item.popular}
-            </div>)}
-            <p className="text-xl font-bold  duration-150 delay-150  group-hover:text-custom-white transition-delay-300 text-custom-primary">
+            {item.popular && (
+              <div className="bg-custom-primary  duration-150 delay-150  ml-18 sm:ml-22 group-hover:bg-custom-secondary text-white text-sm sm:text-xs font-bold py-1 px-3 rounded-full inline-block mb-4">
+                {item.popular}
+              </div>
+            )}
+            <p className="text-lg sm:text-xl font-bold  duration-150 delay-150  group-hover:text-custom-white transition-delay-300 text-custom-primary">
               {item.title}
             </p>
 
-            <p className="text-sm  duration-150 delay-150  group-hover:text-custom-white/60 transition-delay-300 text-custom-primary/50 mt-2">{item.text}</p>
-            { index == 2 ? (
-               <div>
-             <p className="text-sm  duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/70 mt-4">
-              <span className="text-3xl  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white font-bold text-custom-primary">
-                {item.priceMonth}
-              </span>{" "}
-              contact sales
+            <p className="text-[12px] sm:text-sm  duration-150 delay-150  group-hover:text-custom-white/60 transition-delay-300 text-custom-primary/50 mt-2">
+              {item.text}
             </p>
+            {index == 2 ? (
+              <div>
+                <p className="text-sm  duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/70 mt-2 sm:mt-4">
+                  <span className="text-xl sm:text-3xl  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white font-bold text-custom-primary">
+                    {item.priceMonth}
+                  </span>{" "}
+                  contact sales
+                </p>
 
-            <p className="text-sm  duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/50 mt-1">
-              {item.save}
-            </p>
-            </div> ):(
-                 <div>
-             <p className="text-sm  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white/70 text-custom-primary/50 mt-4">
-              <span className="text-3xl  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white  font-bold text-custom-primary">
-                ${item.priceMonth}
-              </span>{" "}
-              per month
-            </p>
+                <p className="text-[12px] sm:text-sm  duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/50 mt-1">
+                  {item.save}
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-[10px] sm:text-sm  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white/70 text-custom-primary/50 mt-2 sm:mt-4">
+                  <span className="text-lg sm:text-xl sm:text-3xl  duration-150 delay-150  transition-delay-300 group-hover:text-custom-white  font-bold text-custom-primary">
+                    ${item.priceMonth}
+                  </span>{" "}
+                  per month
+                </p>
 
-            <p className="text-sm   duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/50 mt-1">
-              ${item.priceYear}/year (save ${item.save})
-            </p>
-            </div>
-               )
-}
-            <Button className="w-full mt-4 rounded-lg  duration-150 delay-150 group-hover:bg-custom-secondary bg-custom-primary text-white py-3">
+                <p className="text-[10px] sm:text-sm   duration-150 delay-150  group-hover:text-custom-white/70 text-custom-primary/50 mt-1">
+                  ${item.priceYear}/year (save ${item.save})
+                </p>
+              </div>
+            )}
+            <Button className="w-full mt-2 sm:mt-4 rounded-lg  duration-150 delay-150 group-hover:bg-custom-secondary bg-custom-primary text-white py-1 sm:py-3">
               {item.button}
             </Button>
 
             {/* Features */}
-            <ul className="mt-6 space-y-2 text-sm text-custom-primary/70">
+            <ul className="mt-3 sm:mt-6 space-y-2 text-sm text-custom-primary/70">
               {item.features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2  duration-150 delay-150  group-hover:text-custom-white/70">
-                  <span className="flex items-center justify-center w-5 h-5 text-white text-xs">
-                    <Tick/>
+                <li
+                  key={i}
+                  className="flex items-center gap-2  duration-150 delay-150  group-hover:text-custom-white/70"
+                >
+                  <span className="flex items-center justify-center w-5 h-5 text-white text-sm sm:text-xs">
+                    <Tick />
                   </span>
                   {feature}
                 </li>

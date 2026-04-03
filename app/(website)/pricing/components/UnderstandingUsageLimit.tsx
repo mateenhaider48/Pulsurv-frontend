@@ -38,56 +38,56 @@ function UnderstandingUsageLimit() {
     <div className="w-full h-[700px] bg-gradient-to-b from-white to-[#F9FAFB] absolute top-[3500px]">
       {/* Heading */}
       <div>
-        <p className="font-bold text-3xl leading-normal text-center text-custom-dark-grey/90 mt-20">
+        <p className="font-bold text-lg sm:text-3xl leading-normal text-center text-custom-dark-grey/90 mt-8 sm:mt-20">
           Understanding Usage & Limits
         </p>
-        <p className="text-base leading-tight mt-2 text-center font-normal text-custom-dark-grey/90">
+        <p className="text-sm sm:text-base leading-tight mt-2 text-center font-normal text-custom-dark-grey/90">
           Our plans are designed to scale with your needs. Choose based on survey{" "}
-          <br /> volume, response requirements, and feature access.
+          <br className="hidden md:block"/> volume, response requirements, and feature access.
         </p>
       </div>
 
       {/* Cards */}
-      <div className="flex gap-6 mt-10 px-20">
+      <div className="grid grid-cols-1  md:grid-cols-2 sm:flex gap-6 mt-4  sm:mt-10  sm:px-20">
         {plans.map((plan) => {
           const isImage = typeof plan.icon === "string";
 
           return (
             <div
               key={plan.title}
-              className="w-[330px] h-[370px] border rounded-lg border-custom-dark-grey/20"
+              className="w-[300px] sm:w-[330px] h-[280px] sm:h-[370px] border m-auto rounded-lg border-custom-dark-grey/20"
             >
               {/* Icon */}
-              <div className="w-12 h-12 ml-4 mt-6 bg-custom-primary rounded-xl flex items-center justify-center text-custom-white p-2">
+              <div className="w-10 sm:w-12 h-10 sm:h-12 ml-4 mt-3 sm:mt-6 bg-custom-primary rounded-xl flex items-center justify-center text-custom-white p-1 sm:p-2">
     
-                  <img src={plan.icon as string} alt={plan.title} className="w-6 h-6 object-contain" />
+                  <img src={plan.icon as string} alt={plan.title} className="w-5 sm:w-6 h-5 sm:h-6 object-contain" />
                 
               </div>
 
               {/* Title */}
-              <p className="text-md font-semibold px-4 mt-4 text-custom-dark-grey/90">
+              <p className="text-base sm:text-md font-semibold px-4 mt-2 sm:mt-4 text-custom-dark-grey/90">
                 {plan.title}
               </p>
 
               {/* Description */}
-              <p className="text-sm text-custom-dark-grey/60 px-4 mt-2">
+              <p className="text-[12px] sm:text-sm text-custom-dark-grey/60 px-4 mt-1 sm:mt-2">
                 {plan.text}
               </p>
 
               {/* Option rows */}
-              <div className="px-4 mt-4 flex flex-col gap-1">
+              <div className="px-4 mt-2 sm:mt-4 flex flex-col gap-1">
                 {plan.options.map((option, i) => (
                   <div key={option.label}>
                     <div className="flex justify-between items-center py-2">
-                      <p className="font-semibold text-base text-custom-primary/90">
+                      <p className="font-semibold text-sm sm:text-base text-custom-primary/90">
                         {option.label}
                       </p>
-                      <p className="text-sm text-custom-primary/60">
+                      <p className="text-[12px] sm:text-sm text-custom-primary/60">
                         {option.value}
                       </p>
                     </div>
                     {i < plan.options.length - 1 && (
-                      <div className="h-[1px] bg-custom-primary/20" />
+                      <div className="h-px bg-custom-primary/20" />
                     )}
                   </div>
                 ))}

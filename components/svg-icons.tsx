@@ -998,22 +998,20 @@ export function WebPlatformIcon({ className }: { className?: string }) {
   );
 }
 
-export function Tick(){
-  return(
-    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.3753 1.04175L5.20866 10.2084L1.04199 6.04175" stroke="#F3704B" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+export function Tick({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 16 12" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.3753 1.04175L5.20866 10.2084L1.04199 6.04175" stroke="#F3704B" strokeWidth="2.08333" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   )
 }
 
-export function Cross(){
-  return(
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+export function Cross({ className }: { className?: string }) {
+  return (
+    <svg  viewBox="0 0 20 20" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 5L5 15" stroke="#D1D5DC" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5 5L15 15" stroke="#D1D5DC" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   )
 }
 
