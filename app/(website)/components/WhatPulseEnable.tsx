@@ -21,8 +21,8 @@ function WhatPulseEnable() {
     },
   ];
   return (
-    <div className="w-full h-[449px] bg-custom-white absolute top-[900px]">
-      <p className="leading-normal font-bold text-lg sm:text-2xl text-center text-custom-dark-grey/100 top-[80px]">
+    <div className="bg-custom-white my-20">
+      <p className="leading-normal font-bold text-lg sm:text-2xl text-center text-custom-dark-grey/100">
         What Pulsurv Enables
       </p>
       <p className="leading-normal font-bold text-sm text-center  text-custom-dark-grey/70">

@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 
 export default function WebsiteLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col text-custom-white">
+    <div className="flex h-auto flex-col text-custom-white">
       <Navbar />
       <main className="flex-1">
         {children} 

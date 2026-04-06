@@ -40,8 +40,8 @@ const deploymentOptions = [
 
 function FlexibleDeployment() {
   return (
-    <div className="w-full h-[1200px] sm:h-[900px] bg-gradient-to-b from-white to-[#F9FAFB] absolute top-[4550px] sm:top-[4200px]">
-      {/* Heading */}
+    <div className="w-full h-auto bg-gradient-to-b from-white to-[#F9FAFB]">
+
       <div>
         <p className="font-bold text-lg sm:text-4xl leading-normal text-center text-custom-dark-grey/90 mt-10">
           Flexible Deployment Options
@@ -52,14 +52,14 @@ function FlexibleDeployment() {
           feature set.
         </p>
       </div>
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:flex gap-3 sm:gap-6 mt-5 sm:mt-10 sm:px-20">
+    
+      <div className="grid grid-cols-1 md:flex gap-3 md:gap-6 mt-5 md:mt-10 ">
         {deploymentOptions.map((option) => {
           const Icon = option.icon;
           return (
             <div
               key={option.title}
-              className="w-[290px] sm:w-[500px]  m-auto sm:ml-6 h-auto  border border-2 rounded-lg group hover:border-custom-secondary border-custom-dark-grey/10"
+              className="w-auto  m-auto h-auto  border border-2 rounded-lg group hover:border-custom-secondary border-custom-dark-grey/10 "
             >
               <div className="flex ml-6 mt-4 sm:mt-8 gap-2 sm:gap-4 items-center">
                 <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-xl group-hover:bg-custom-secondary bg-custom-primary flex items-center justify-center">
@@ -93,13 +93,13 @@ function FlexibleDeployment() {
                 ))}
               </ul>
               <Button
-                className="w-[260px] sm:w-[423px] mt-3 mb-4 sm:mt-6 ml-3 sm:ml-7 h-8 rounded-lg  py-4 sm:py-5 px-4 sm:px-8  leading-normal font-500 group-hover:bg-custom-secondary bg-text-custom-white bg-custom-primary text-custom-white font-[16px] group-hover:border group-hover:border-[1px] group-hover:border-custom-secondary"
+                className="w-[250px] md:w-[423px] m-4  h-8 rounded-lg  py-4 sm:py-5 px-4 sm:px-8  leading-normal font-500 group-hover:bg-custom-secondary bg-text-custom-white bg-custom-primary text-custom-white font-[16px] group-hover:border group-hover:border-[1px] group-hover:border-custom-secondary"
                 children={option.btn}
               />
             </div>
           );
         })}
-     <div className="flex border bg-[#EFF6FF] h-auto sm:h-16 w-full max-w-[1050px] border-[#BEDBFF] rounded-lg mt-8 mx-auto px-6 items-center gap-4 sm:gap-8">
+     {/* <div className="flex border bg-[#EFF6FF] h-auto sm:h-16 w-full max-w-[1050px] border-[#BEDBFF] rounded-lg mt-8 mx-auto px-6 items-center gap-4 sm:gap-8">
   <p className="text-sm sm:text-base font-semibold text-custom-dark-grey/80 leading-tight shrink-0">
     Need help deciding?
   </p>
@@ -107,7 +107,7 @@ function FlexibleDeployment() {
     Our team can help you choose the right deployment option based on
     your security, compliance, and operational requirements.
   </p>
-    </div>
+    </div> */}
     </div>
     </div>
   );

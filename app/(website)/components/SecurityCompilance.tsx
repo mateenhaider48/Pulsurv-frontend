@@ -14,7 +14,7 @@ function SecurityCompliance(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full h-[600px] bg-custom-white absolute top-[6530px] sm:top-[6108px]">
+    <div className="h-auto bg-custom-white ">
       <div>
         <p className="font-bold text-md sm:text-3xl leading-normal text-center text-custom-dark-grey/90 mt-8 sm:mt-20">
           Security, Compliance & Accessibility
@@ -23,7 +23,7 @@ function SecurityCompliance(props: Props) {
           Enterprise-grade security and compliance built into every layer
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:flex gap-2 sm:gap-4 ml-2 sm:ml-34 justify-items-center mt-4 sm:mt-16 mb-8 sm:mb-20">
+      <div className="grid grid-cols-1 md:flex gap-2 sm:gap-4  justify-items-center mt-4 sm:mt-16 mb-8 sm:mb-20">
         <Card
           icon={GDRP}
           title="GDPR Compliant"
@@ -49,8 +49,8 @@ function SecurityCompliance(props: Props) {
           index={1}
         />
       </div>
-      <div className="h-14 sm:h-24 w-[310px] sm:w-[1140px] rounded-xl m-auto sm:ml-14 bg-custom-dark-grey/10 border border-1 border-custom-dark-grey/20">
-        <div className="flex items-center justify-center mt-3 sm:mt-6 gap-2 sm:gap-4">
+      <div className="h-auto w-auto  rounded-xl m-4 p-4  bg-custom-dark-grey/10 border border-1 border-custom-dark-grey/20">
+        <div className="flex items-center justify-center gap-2 sm:gap-4">
           <div>
             <p className="text-sm sm:text-2xl font-700 font-bold leading-normal text-custom-dark-grey/90 text-center">
               256-bit

@@ -79,7 +79,7 @@ function PricingCards() {
   ];
 
   return (
-    <div className="w-full  py-4 sm:py-16  absolute top-[350px]">
+    <div className="w-full  py-4 sm:py-16  ">
       <div className="flex flex-wrap justify-center mt-3 gap-3 sm:mt-6 sm:gap-6">
         {cards.map((item, index) => (
           <div

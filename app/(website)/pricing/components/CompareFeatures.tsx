@@ -69,8 +69,8 @@ const plans = ["Starter", "Professional", "Enterprise"];
 
 function CompareFeatures() {
   return (
-    <div className="w-full bg-[#F9FAFB] absolute top-[1950px] sm:top-[1100px]">
-      <div className="max-w-[1180px]  mx-auto">
+    <div className="w-full bg-[#F9FAFB]">
+      <div>
         <p className="font-bold text-lg sm:text-3xl leading-normal text-center text-custom-dark-grey/90">
           Compare Features Across Plans
         </p>
@@ -79,10 +79,10 @@ function CompareFeatures() {
           team's needs.
         </p>
 
-        <div className="mt-4 sm:mt-10 m-auto sm:ml-4 w-[310px] sm:w-[1140px] border border-custom-primary/20 rounded-xl overflow-hidden">
+        <div className="m-4 sm:ml-4 w-auto border border-custom-primary/20 rounded-xl overflow-hidden">
           <table className="w-full table-fixed">
             <colgroup>
-              {["w-[10%] sm:w-[40%]", "w-[4%] sm:w-[20%]", "w-[6%] sm:w-[20%]", "w-[5%] sm:w-[20%]"].map((w, i) => (
+              {["w-[10%] md:w-[40%]", "w-[4%] md:w-[20%]", "w-[6%] md:w-[20%]", "w-[5%] md:w-[20%]"].map((w, i) => (
                 <col key={i} className={w} />
               ))}
             </colgroup>

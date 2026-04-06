@@ -6,7 +6,7 @@ function TransparentPricing(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full min-h-60 bg-gradient-to-b from-white to-[#F9FAFB] absolute">
+    <div className="w-full min-h-60 bg-gradient-to-b from-white to-[#F9FAFB]">
       <div>
         <p className="font-bold text-lg sm:text-4xl leading-normal text-center text-custom-dark-grey/90 mt-4 sm:mt-10">
           Simple, Transparent <span className="text-custom-secondary">Pricing</span> for Every Team

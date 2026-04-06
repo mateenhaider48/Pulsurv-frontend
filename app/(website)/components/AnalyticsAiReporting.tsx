@@ -12,7 +12,7 @@ function AnalyticsAiReporting(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full py-10 absolute top-[2500px] sm:top-[2000px]">
+    <div className="w-full p-4 mb-10 sm:mb-20">
       <div>
         <p className="font-bold text-xl sm:text-2xl leading-normal text-center text-custom-dark-grey/90 mt-4">
           Analytics, AI Insights & Reporting
@@ -23,7 +23,7 @@ function AnalyticsAiReporting(props: Props) {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-2 sm:gap-10 lg:gap-0 mt-4 sm:mt-14 px-6 sm:px-10 lg:px-0">
+      <div className="flex flex-col lg:flex-row gap-2 sm:gap-10 lg:gap-0 mt-4 px-4 sm:px-6 sm:mt-14  lg:px-0">
         <div className="flex flex-col gap-10 lg:ml-20">
           <div className="flex gap-4">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-custom-dark-grey/10 flex items-center justify-center flex-shrink-0">
@@ -82,12 +82,12 @@ function AnalyticsAiReporting(props: Props) {
           </div>
         </div>
 
-        {/* Right: Charts */}
+       
         <div className="flex flex-col gap-4 lg:ml-20">
-          <div className="border h-[325px] w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
+          <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
             <ResponseDistribution />
           </div>
-          <div className="border h-[325px] w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
+          <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
             <SentimentDonut />
           </div>
         </div>

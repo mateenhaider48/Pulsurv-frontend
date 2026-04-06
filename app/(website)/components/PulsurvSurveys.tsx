@@ -3,22 +3,21 @@ import Button from "@/components/ui/Button";
 
 export default function PulsurvSurveys() {
   return (
-    <div className="w-full max-w-full min-h-screen bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] relative">
-      <div className="flex flex-col w-full max-w-7xl min-h-screen mx-auto">
-        {/* Left Content */}
-        <div className="flex flex-col justify-center px-6 sm:px-10 py-12 w-full  z-10">
-          <p className="font-bold text-3xl sm:text-6xl  lg:leading-[75px] text-custom-secondary">
+    <div className=" bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] ">
+      <div className="flex flex-col md:flex-row  min-h-screen">
+        <div className="flex flex-col justify-center p-6 max-w-3xl z-10">
+          <p className="font-bold text-3xl sm:text-6xl   leading-auto text-custom-secondary">
             Pulse Surveys{" "}
             <span className="text-custom-dark-grey">
               for Customers and Teams
             </span>
           </p>
 
-          <p className="text-custom-dark-grey/60 text-sm sm:text-base leading-tight sm:leading-[29px] max-w-md mt-4 sm:mt-5">
+          <p className="text-custom-dark-grey/60 text-sm sm:text-base tracking-tight sm:leading-[29px] max-w-md mt-4 sm:mt-5">
             Create, distribute, and analyze short surveys to gather real-time
             feedback from customers and internal teams.
           </p>
-          <p className="text-custom-dark-grey/60 text-sm mt-4 sm:text-base leading-tight sm:leading-[29px] max-w-md mt-1">
+          <p className="text-custom-dark-grey/60 text-sm  sm:text-base tracking-tight sm:leading-[29px] max-w-md">
             AI-powered insights help identify trends, engagement levels, and
             areas for improvement without manual effort.
           </p>
@@ -58,7 +57,25 @@ export default function PulsurvSurveys() {
           </div>
         </div>
 
-         
+        <div className="relative ml-auto md:w-1/3 bg-custom-secondary rounded-b-none rounded-bl-[20px] md:rounded-bl-[50px] rounded-br-[20px] h-auto flex-shrink-0">
+          <img
+            src="./images/heroSection.png"
+            alt="Hero section"
+            className="
+              relative
+              w-[60%]
+              md:w-[100%]
+              h-auto
+              md:top-[140px]
+              p-6
+              m-auto
+              md:right-1/3    
+              right-0      
+              rounded-4
+              z-20
+            "
+          />
+        </div>
       </div>
     </div>
   );

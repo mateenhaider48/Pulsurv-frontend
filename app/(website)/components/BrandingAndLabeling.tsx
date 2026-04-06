@@ -15,16 +15,16 @@ function BrandingAndLabeling(props: Props) {
   const {} = props;
 
   return (
-    <div className="w-full h-[920px] py-10 absolute top-[4500px] sm:top-[3970px] ">
+    <div className="w-full py-10 ">
       <div>
-        <p className="font-bold text-lg sm:text-2xl leading-tight sm:leading-normal text-center text-custom-dark-grey/90 mt-4">
+        <p className="font-bold text-lg sm:text-2xl leading-tight sm:leading-normal text-center text-custom-dark-grey/90 mt-2">
           Branding & White Labelling
         </p>
         <p className="text-sm sm:text-base leading-tight text-center mt-1 text-custom-dark-grey/40">
           Make Pulsurv truly yours with comprehensive branding controls
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:flex items-center justify-center mt-2 sm:mt-10 gap-2 sm:gap-10">
+      <div className="grid grid-cols-1 md:flex items-center justify-center p-4 md:block md:mx-auto  sm:mt-10 gap-1 sm:gap-10">
         <Card
           icon={Themes}
           title="Base Colors & Themes"
@@ -52,7 +52,7 @@ function BrandingAndLabeling(props: Props) {
       <div>
         <img
           src="/images/brandingImg.png"
-          className="h-[260px] sm:h-[631px] ml-2 sm:ml-10  mt-4 sm:mt-10 w-[300px] sm:w-[1200px]"
+          className="h-auto ml-auto p-3 w-auto"
         />
       </div>
     </div>

@@ -22,7 +22,7 @@ const plans = [
     ],
   },
   {
-    icon: "/images/advanceIcon.png", // ✅ just the path, not an HTML string
+    icon: "/images/advanceIcon.png", 
     title: "Advanced Features",
     text: "AI-powered analytics, custom branding, and advanced integrations are available in higher tiers.",
     options: [
@@ -35,7 +35,7 @@ const plans = [
 
 function UnderstandingUsageLimit() {
   return (
-    <div className="w-full h-[700px] bg-gradient-to-b from-white to-[#F9FAFB] absolute top-[3500px]">
+    <div className="bg-gradient-to-b from-white to-[#F9FAFB] ">
       {/* Heading */}
       <div>
         <p className="font-bold text-lg sm:text-3xl leading-normal text-center text-custom-dark-grey/90 mt-8 sm:mt-20">
@@ -48,7 +48,7 @@ function UnderstandingUsageLimit() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1  md:grid-cols-2 sm:flex gap-6 mt-4  sm:mt-10  sm:px-20">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:flex gap-6 mt-4 sm:gap-4 p-3">
         {plans.map((plan) => {
           const isImage = typeof plan.icon === "string";
 

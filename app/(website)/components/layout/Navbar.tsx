@@ -19,13 +19,13 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-custom-dark-grey/20 bg-custom-white text-black">
-        <div className="mx-auto flex max-w-6xl h-12 sm: h-20 items-center justify-between px-4 sm:px-6">
+        <div className="mx-auto flex max-w-auto h-auto p-4 items-center justify-between ">
           {/* Logo */}
           <Link href="/">
             <img
               src="/images/pulsurvIcon.png"
               alt="pulsurvLogo"
-              className="h-5 w-28"
+              className="h-4 w-25 sm:h-5 sm:w-28"
             />
           </Link>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
 
           {/* Hamburger Button */}
           <button
-            className="md:hidden flex flex-col justify-center items-center gap-1.5 w-9 h-9"
+            className="md:hidden flex flex-col justify-center items-center gap-1.5 w-6 sm:w-9 h-6 sm:h-9"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
@@ -80,7 +80,6 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu — fixed, starts just below the navbar (top-20) */}
       <div
         className={`fixed top-20 left-0 right-0 z-40 md:hidden bg-custom-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "max-h-96 border-t border-custom-dark-grey/10" : "max-h-0"
@@ -118,7 +117,6 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* Spacer so page content doesn't hide under fixed navbar */}
       <div className="h-20" />
     </>
   );
