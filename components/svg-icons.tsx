@@ -1083,3 +1083,32 @@ export function TeamIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export function EnterpriseIcon({ className }: { className?: string }) {
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <g clipPath="url(#clip0_35_5757)">
+        <path d="M5 18.3334V3.33341C5 2.89139 5.17559 2.46746 5.48816 2.1549C5.80072 1.84234 6.22464 1.66675 6.66667 1.66675H13.3333C13.7754 1.66675 14.1993 1.84234 14.5118 2.1549C14.8244 2.46746 15 2.89139 15 3.33341V18.3334H5Z" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4.99935 10H3.33268C2.89065 10 2.46673 10.1756 2.15417 10.4882C1.84161 10.8007 1.66602 11.2246 1.66602 11.6667V16.6667C1.66602 17.1087 1.84161 17.5326 2.15417 17.8452C2.46673 18.1577 2.89065 18.3333 3.33268 18.3333H4.99935" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M15 7.5H16.6667C17.1087 7.5 17.5326 7.6756 17.8452 7.98816C18.1577 8.30072 18.3333 8.72464 18.3333 9.16667V16.6667C18.3333 17.1087 18.1577 17.5326 17.8452 17.8452C17.5326 18.1577 17.1087 18.3333 16.6667 18.3333H15" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.33398 5H11.6673" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.33398 8.33325H11.6673" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.33398 11.6667H11.6673" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.33398 15H11.6673" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_35_5757">
+          <rect width="20" height="20" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function PrivacyFirst({ className }: { className?: string }) {
+  return (
+    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M14.1673 10.0003C14.1673 14.167 11.2507 16.2503 7.78398 17.4586C7.60245 17.5201 7.40527 17.5172 7.22565 17.4503C3.75065 16.2503 0.833984 14.167 0.833984 10.0003V4.16696C0.833984 3.94595 0.921782 3.73398 1.07806 3.5777C1.23434 3.42142 1.4463 3.33363 1.66732 3.33363C3.33398 3.33363 5.41732 2.33363 6.86732 1.06696C7.04386 0.916126 7.26845 0.833252 7.50065 0.833252C7.73286 0.833252 7.95744 0.916126 8.13398 1.06696C9.59232 2.34196 11.6673 3.33363 13.334 3.33363C13.555 3.33363 13.767 3.42142 13.9232 3.5777C14.0795 3.73398 14.1673 3.94595 14.1673 4.16696V10.0003Z" stroke="#155DFC" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
