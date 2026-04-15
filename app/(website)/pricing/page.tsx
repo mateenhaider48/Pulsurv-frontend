@@ -14,8 +14,8 @@ export default function Pricing() {
         <CompareFeatures/>
         <UnderstandingUsageLimit/>
         <FlexibleDeployment/>
-        {/* <SecurityPrivacyCompliance/>
-        <ChooseThePlan/> */}
+        <SecurityPrivacyCompliance/>
+        <ChooseThePlan/>
         </>
     )
 }

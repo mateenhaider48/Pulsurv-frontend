@@ -8,7 +8,7 @@ function WhatPulsurvDoes() {
           What Pulsurv Does
         </p>
         <p className="text-base leading-[24px] text-center mt-1 text-custom-dark-grey/40">
-          Pulsurv simplifies the entire feedback lifecycle—from survey creation to <br/>actionable insights—so you can focus on making better decisions.
+          Pulsurv simplifies the entire feedback lifecycle—from survey creation to <br className='hidden md:block'/>actionable insights—so you can focus on making better decisions.
         </p>
       </div>
     </div>

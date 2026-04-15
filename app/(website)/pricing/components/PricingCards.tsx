@@ -80,11 +80,11 @@ function PricingCards() {
 
   return (
     <div className="w-full  py-4 sm:py-16  ">
-      <div className="flex flex-wrap justify-center mt-3 gap-3 sm:mt-6 sm:gap-6">
+      <div className="flex flex-wrap justify-center mt-3  gap-6">
         {cards.map((item, index) => (
           <div
             key={index}
-            className="w-[280px] sm:w-[350px] p-3 sm:p-6 border border-gray-200 bg-white shadow-2xl rounded-2xl group hover:bg-custom-primary transition-all duration-150 delay-150 hover:scale-105 hover:border-2 hover:border-custom-secondary hover:shadow-lg transition"
+            className="w-[280px] md:w-[350px] p-3 sm:p-6 border border-gray-200 bg-white shadow-2xl rounded-2xl group hover:bg-custom-primary transition-all duration-150 delay-150 hover:scale-105 hover:border-2 hover:border-custom-secondary hover:shadow-lg transition"
           >
             {item.popular && (
               <div className="bg-custom-primary  duration-150 delay-150  ml-18 sm:ml-22 group-hover:bg-custom-secondary text-white text-sm sm:text-xs font-bold py-1 px-3 rounded-full inline-block mb-4">

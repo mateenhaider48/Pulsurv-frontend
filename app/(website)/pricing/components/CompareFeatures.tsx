@@ -7,7 +7,10 @@ const sections = [
     features: [
       { label: "Multi-page surveys", plans: [true, true, true] },
       { label: "Multiple question types", plans: [true, true, true] },
-      { label: "Multimedia support (images, video)", plans: [true, true, true] },
+      {
+        label: "Multimedia support (images, video)",
+        plans: [true, true, true],
+      },
       { label: "AI-assisted survey generation", plans: [false, true, true] },
       { label: "AI-assisted question generation", plans: [false, true, true] },
     ],
@@ -75,23 +78,38 @@ function CompareFeatures() {
           Compare Features Across Plans
         </p>
         <p className="text-[12px] sm:text-base leading-tight text-center text-custom-dark-grey/90 mt-2">
-          All plans include core survey capabilities. Choose the tier that best fits your <br className="hidden md:block" />
+          All plans include core survey capabilities. Choose the tier that best
+          fits your <br className="hidden md:block" />
           team's needs.
         </p>
 
-        <div className="m-4 sm:ml-4 w-auto border border-custom-primary/20 rounded-xl overflow-hidden">
+        <div className="m-4 sm:m-20 md:m-10 w-auto bg-custom-white shadow-md rounded-xl ">
           <table className="w-full table-fixed">
             <colgroup>
-              {["w-[10%] md:w-[40%]", "w-[4%] md:w-[20%]", "w-[6%] md:w-[20%]", "w-[5%] md:w-[20%]"].map((w, i) => (
+              {[
+                "w-[10%] md:w-[40%]",
+                "w-[4%] md:w-[20%]",
+                "w-[6%] md:w-[20%]",
+                "w-[5%] md:w-[20%]",
+              ].map((w, i) => (
                 <col key={i} className={w} />
               ))}
             </colgroup>
 
-            <thead className="bg-custom-primary text-[10px] sm:text-sm text-custom-white">
+            <thead className="text-[10px] sm:text-sm text-custom-white">
               <tr>
-                <th className="p-2 sm:p-4 text-left">Features</th>
-                {plans.map((plan) => (
-                  <th key={plan} className="p-2 sm:p-4 text-center">{plan}</th>
+                <th className="p-2 sm:p-4 text-left bg-custom-primary rounded-tl-xl">
+                  Features
+                </th>
+                {plans.map((plan, index) => (
+                  <th
+                    key={plan}
+                    className={`p-2 sm:p-4 text-center bg-custom-primary ${
+                      index === plans.length - 1 ? "rounded-tr-xl" : ""
+                    }`}
+                  >
+                    {plan}
+                  </th>
                 ))}
               </tr>
             </thead>

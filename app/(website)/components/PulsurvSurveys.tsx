@@ -5,7 +5,7 @@ export default function PulsurvSurveys() {
   return (
     <div className=" bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] ">
       <div className="flex flex-col md:flex-row  min-h-screen">
-        <div className="flex flex-col justify-center p-6 max-w-3xl z-10">
+        <div className="flex flex-col justify-center p-10 max-w-3xl z-10">
           <p className="font-bold text-3xl sm:text-6xl   leading-auto text-custom-secondary">
             Pulse Surveys{" "}
             <span className="text-custom-dark-grey">

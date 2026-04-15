@@ -41,25 +41,24 @@ const deploymentOptions = [
 function FlexibleDeployment() {
   return (
     <div className="w-full h-auto bg-gradient-to-b from-white to-[#F9FAFB]">
-
       <div>
         <p className="font-bold text-lg sm:text-4xl leading-normal text-center text-custom-dark-grey/90 mt-10">
           Flexible Deployment Options
         </p>
-        <p className="text-md sm:text-lg leading-tight text-center text-custom-dark-grey/60 mt-4">
+        <p className="text-md sm:text-lg leading-tight text-center p-2  text-custom-dark-grey/60 ">
           Choose between cloud-based simplicity or self-hosted control. Both
           options <br className="hidden md:block" /> include the full Pulsurv
           feature set.
         </p>
       </div>
-    
-      <div className="grid grid-cols-1 md:flex gap-3 md:gap-6 mt-5 md:mt-10 ">
+
+      <div className="grid grid-cols-1 md:flex gap-4 my-2 mx-2 sm:mx-10 md:mx-20 ">
         {deploymentOptions.map((option) => {
           const Icon = option.icon;
           return (
             <div
               key={option.title}
-              className="w-auto  m-auto h-auto  border border-2 rounded-lg group hover:border-custom-secondary border-custom-dark-grey/10 "
+              className="w-auto h-auto  border border-2 rounded-lg group hover:border-custom-secondary border-custom-dark-grey/10 "
             >
               <div className="flex ml-6 mt-4 sm:mt-8 gap-2 sm:gap-4 items-center">
                 <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-xl group-hover:bg-custom-secondary bg-custom-primary flex items-center justify-center">
@@ -76,7 +75,7 @@ function FlexibleDeployment() {
               </div>
 
               {/* Description */}
-              <p className="text-sm sm:text-base mt-2 sm:mt-4 mx-3 mx-6 text-custom-dark-grey/50">
+              <p className="text-sm sm:text-base mt-2 sm:mt-4 mx-6 text-custom-dark-grey/50">
                 {option.description}
               </p>
 
@@ -85,7 +84,7 @@ function FlexibleDeployment() {
                 {option.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center gap-2 text-base text-custom-dark-grey/50"
+                    className="flex items-center gap-2 text-sm md:text-base text-custom-dark-grey/50"
                   >
                     <Tick className="w-4  h-4 " />
                     {feature}
@@ -93,22 +92,26 @@ function FlexibleDeployment() {
                 ))}
               </ul>
               <Button
-                className="w-[250px] md:w-[423px] m-4  h-8 rounded-lg  py-4 sm:py-5 px-4 sm:px-8  leading-normal font-500 group-hover:bg-custom-secondary bg-text-custom-white bg-custom-primary text-custom-white font-[16px] group-hover:border group-hover:border-[1px] group-hover:border-custom-secondary"
-                children={option.btn}
-              />
+                className="w-[calc(100%-3rem)] m-6 h-auto rounded-lg text-center 
+             leading-normal font-medium bg-custom-primary text-custom-white 
+             group-hover:bg-custom-secondary group-hover:border 
+             group-hover:border-custom-secondary"
+              >
+                {option.btn}
+              </Button>
             </div>
           );
         })}
-     {/* <div className="flex border bg-[#EFF6FF] h-auto sm:h-16 w-full max-w-[1050px] border-[#BEDBFF] rounded-lg mt-8 mx-auto px-6 items-center gap-4 sm:gap-8">
-  <p className="text-sm sm:text-base font-semibold text-custom-dark-grey/80 leading-tight shrink-0">
-    Need help deciding?
-  </p>
-  <p className="text-[12px] sm:text-sm text-custom-dark-grey/60 break-words min-w-0">
-    Our team can help you choose the right deployment option based on
-    your security, compliance, and operational requirements.
-  </p>
-    </div> */}
-    </div>
+      </div>
+      <div className="flex border bg-[#EFF6FF] h-auto px-6 sm:px-14 py-5 max-w-full mx-2 sm:mx-10 md:mx-20 my-8 border-[#BEDBFF] rounded-lg items-center ">
+        <p className="text-sm sm:text-base font-semibold text-custom-dark-grey/80 leading-tight">
+          Need help deciding? <span className="text-[12px] sm:text-sm text-custom-dark-grey/60 ">
+          Our team can help you choose the right deployment option based on your
+          security, compliance, and operational requirements.
+        </span>
+        </p>
+        
+      </div>
     </div>
   );
 }

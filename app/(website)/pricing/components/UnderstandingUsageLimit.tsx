@@ -48,7 +48,7 @@ function UnderstandingUsageLimit() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:flex gap-6 mt-4 sm:gap-4 p-3">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:flex gap-6 mt-4 md:gap-4 p-2 sm:p-15">
         {plans.map((plan) => {
           const isImage = typeof plan.icon === "string";
 
