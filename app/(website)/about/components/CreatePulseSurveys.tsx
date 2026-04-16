@@ -106,7 +106,7 @@ function CreatePulseSurveys() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 md:flex-row my-30 mx-12">
+      <div className="flex flex-col gap-4 md:flex-row my-46 mx-12">
         <div className="w-1/2 ">
           <img
             src="/images/distributedSeamlessly.png"
@@ -127,7 +127,7 @@ function CreatePulseSurveys() {
             />
           </div>
         </div>
-        <div className="my-16">
+        <div className="my-15">
           <p className="text-custom-dark-grey/90 font-bold text-xl leading-normal tracking-tight">
             Distribute Seamlessly
           </p>

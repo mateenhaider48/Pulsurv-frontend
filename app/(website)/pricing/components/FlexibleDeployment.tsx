@@ -1,4 +1,4 @@
-import { Cloud, Tick } from "@/components/svg-icons";
+import { Cloud, SelfHostedIcon, Tick } from "@/components/svg-icons";
 import Button from "@/components/ui/Button";
 
 const deploymentOptions = [
@@ -20,7 +20,7 @@ const deploymentOptions = [
     btn: "Get Started with Cloud",
   },
   {
-    icon: Cloud, // replace with your self-hosted icon
+    icon: SelfHostedIcon,
     title: "Self-Hosted",
     badge: "Available as paid add-on",
     description:

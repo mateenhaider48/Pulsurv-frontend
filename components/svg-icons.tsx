@@ -1131,3 +1131,15 @@ export function HTMLIcon() {
 
   )
 }
+
+
+export function SelfHostedIcon({ className }: { className?: string }) {
+  return (
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M23.333 2.33337H4.66634C3.37768 2.33337 2.33301 3.37804 2.33301 4.66671V9.33337C2.33301 10.622 3.37768 11.6667 4.66634 11.6667H23.333C24.6217 11.6667 25.6663 10.622 25.6663 9.33337V4.66671C25.6663 3.37804 24.6217 2.33337 23.333 2.33337Z" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.333 16.3334H4.66634C3.37768 16.3334 2.33301 17.378 2.33301 18.6667V23.3334C2.33301 24.622 3.37768 25.6667 4.66634 25.6667H23.333C24.6217 25.6667 25.6663 24.622 25.6663 23.3334V18.6667C25.6663 17.378 24.6217 16.3334 23.333 16.3334Z" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7H7.01167" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 21H7.01167" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  )
+}
