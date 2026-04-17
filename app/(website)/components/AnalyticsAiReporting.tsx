@@ -10,7 +10,13 @@ interface Props {}
 
 function AnalyticsAiReporting(props: Props) {
   const {} = props;
-
+  const barData = [
+    { name: "Q1", value: 80 },
+    { name: "Q2", value: 70 },
+    { name: "Q3", value: 90 },
+    { name: "Q4", value: 70 },
+    { name: "Q5", value: 75 },
+  ]
   return (
     <div className="w-full p-4 mb-10 sm:mb-20">
       <div>
@@ -85,7 +91,7 @@ function AnalyticsAiReporting(props: Props) {
        
         <div className="flex flex-col gap-4 lg:ml-20">
           <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
-            <ResponseDistribution />
+            <ResponseDistribution text="Response Distribution" barData={barData} />
           </div>
           <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
             <SentimentDonut />

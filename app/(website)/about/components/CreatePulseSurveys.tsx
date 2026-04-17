@@ -44,31 +44,32 @@ function CreatePulseSurveys() {
     },
   ];
   return (
+    <div>
     <div className="rotate-0 opacity-100 bg-gradient-to-b from-[#E3F1FF] to-[#FFFFFF]">
       <div className="flex flex-col lg:flex-row ">
-        <div className="mt-16 ml-12">
-          <p className="text-custom-dark-grey/90 font-bold text-xl leading-normal tracking-tight">
+        <div className="mt-6 sm:mt-16 ml-4 sm:ml-12">
+          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight">
             Create Pulse Surveys
           </p>
-          <ul className="text-md mt-4 text-custom-dark-grey/50">
+          <ul className="text-sm sm:text-md mt-2 sm:mt-4 text-custom-dark-grey/50">
             <li className="flex gap-2 mt-2">
-              <CorrectIcon />
-              Build quick and focused surveys using a variety of question types
-              designed for flexibility.
+              <CorrectIcon className="w-4 h-4"/>
+              <p>Build quick and focused surveys using a variety of question types
+              designed for flexibility.</p>
             </li>
             <li className="flex gap-2  mt-2">
-              <CorrectIcon />
-              Add multimedia elements like images or videos to make surveys more
-              engaging.
+              <CorrectIcon className="w-4 h-4"/>
+              <p>Add multimedia elements like images or videos to make surveys more
+              engaging.</p>
             </li>
             <li className="flex gap-2 mt-2">
-              <CorrectIcon />
-              Use AI-assisted generation to speed up survey creation and improve
-              quality.
+              <CorrectIcon className="w-4 h-4"/>
+              <p>Use AI-assisted generation to speed up survey creation and improve
+              quality.</p>
             </li>
             <li className="flex gap-2 mt-2">
-              <CorrectIcon />
-              Create professional surveys efficiently with minimal effort.
+              <CorrectIcon className="w-4 h-4"/>
+              <p>Create professional surveys efficiently with minimal effort.</p>
             </li>
           </ul>
         </div>
@@ -105,9 +106,9 @@ function CreatePulseSurveys() {
           />
         </div>
       </div>
-
-      <div className="flex flex-col gap-4 md:flex-row my-46 mx-12">
-        <div className="w-1/2 ">
+  </div>
+      <div className="flex flex-col gap-4 md:flex-row my-15 sm:my-46 mx-4 sm:mx-12">
+        <div className="w-full sm:w-1/2 ">
           <img
             src="/images/distributedSeamlessly.png"
             alt="distribute seamlessly"
@@ -127,59 +128,60 @@ function CreatePulseSurveys() {
             />
           </div>
         </div>
-        <div className="my-15">
-          <p className="text-custom-dark-grey/90 font-bold text-xl leading-normal tracking-tight">
+        <div className="my-6 sm:my-15">
+          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight">
             Distribute Seamlessly
           </p>
-          <ul className="text-md mt-4 text-custom-dark-grey/50">
+          <ul className="text-sm sm:text-md mt-4 text-custom-dark-grey/50">
             <li className="flex gap-2 mt-3">
-              <CorrectIcon />
+             <CorrectIcon className="w-4 h-4"/>
               Reach respondents through multiple channels such as email, SMS,
               and in-app notifications
             </li>
-            <li className="flex gap-2  mt-6">
-              <CorrectIcon />
+            <li className="flex gap-2  mt-3 sm:mt-6">
+             <CorrectIcon className="w-4 h-4"/>
               Share surveys easily using QR codes or web embeds.
             </li>
-            <li className="flex gap-2 mt-6">
-              <CorrectIcon />
+            <li className="flex gap-2 mt-3 sm:mt-6">
+             <CorrectIcon className="w-4 h-4"/>
               Share surveys easily using QR codes or web embeds..
             </li>
-            <li className="flex gap-2 mt-6">
-              <CorrectIcon />
+            <li className="flex gap-2 mt-3 sm:mt-6">
+              <CorrectIcon className="w-4 h-4"/>
               Distribute surveys quickly and efficiently across platforms.
             </li>
           </ul>
-          <p className="text-custom-dark-grey/90 font-bold text-xl leading-normal tracking-tight mt-14">
+          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight mt-6 sm:mt-14">
             Distribution Method
           </p>
-          <p className="text-custom-dark-grey/60 text-base leading-normal tracking-tight mt-1">
+          <p className="text-custom-dark-grey/60 text-sm sm:text-base leading-normal tracking-tight mt-1">
             Choose one or more delivery channels
           </p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
             {cards.map((card, index) => {
               return (
                 <div
                   key={index}
-                  className="w-auto h-18 border-[1.5px] border-custom-secondary rounded-lg p-2 mt-4  flex items-center gap-2"
+                  className="w-auto h-12 sm:h-18 border-1 sm:border-[1.5px] border-custom-secondary rounded-lg p-2 mt-4  flex items-center gap-2"
                 >
-                  <div className="bg-custom-primary w-12 h-12 flex items-center justify-center rounded-full">
-                    <card.icon className="w-5 h-5 text-white m-auto" />
+                  <div className="bg-custom-primary w-8 sm:w-12 h-8 sm:h-12 flex items-center justify-center rounded-full">
+                    <card.icon className="w-3 sm:w-5 h-3 sm:h-5 text-white m-auto" />
                   </div>
                   <div className="flex flex-col">
-                    <p className="text-custom-dark-grey/90 font-bold text-base">
+                    <p className="text-custom-dark-grey/90 font-bold text-sm sm:text-base">
                       {card.title}
                     </p>
-                    <p className="text-custom-dark-grey/50 text-[12px]">
+                    <p className="text-custom-dark-grey/50 text-[10px] sm:text-[12px]">
                       {card.description}
                     </p>
                   </div>
                 </div>
               );
             })}
-          </div>
+        
         </div>
       </div>
+    </div>
     </div>
   );
 }

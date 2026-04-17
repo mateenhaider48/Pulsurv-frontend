@@ -5,7 +5,7 @@ import InformationCollect from './components/InformationCollect'
 function page() {
   return (
     <div>
-      <PrivacyPolicy/>
+        <PrivacyPolicy/>
       <InformationCollect/>
     </div>
   )

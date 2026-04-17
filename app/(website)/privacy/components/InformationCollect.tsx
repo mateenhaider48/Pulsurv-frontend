@@ -523,7 +523,7 @@ function InformationCollect() {
             )}
             {i === 9 ? (
               <>
-                <div className="bg-custom-primary p-6 rounded-sm h-auto w-full mt-4 sm:mt-10 mb-4 sm:mb-10  ">
+                <div className="bg-custom-primary p-6 rounded-lg h-auto w-full mt-4 sm:mt-10 mb-4 sm:mb-10  ">
                   <p className="px-6 mt-4 text-base sm:text-md text-white text-center font-medium">
                     Thank you for trusting Pulsurv with your data.
                   </p>
