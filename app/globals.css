@@ -39,6 +39,13 @@
   .border-custom-dark-grey {
     border-color: var(--color-custom-dark-grey);
   }
+  .bg-fire-conic {
+    background: conic-gradient(
+      from 144.43deg at 50% 50%,
+      rgba(184, 41, 0, 0.2) 0deg,
+      rgba(243, 112, 75, 0.2) 360deg
+    );
+  }
 }
 
 @media (prefers-color-scheme: dark) {
