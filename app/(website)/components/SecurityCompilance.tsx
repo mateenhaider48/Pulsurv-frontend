@@ -23,7 +23,7 @@ function SecurityCompliance(props: Props) {
           Enterprise-grade security and compliance built into every layer
         </p>
       </div>
-      <div className="grid grid-cols-1 md:flex md:items-center md:justify-center gap-2 sm:gap-4  justify-items-center mt-4 sm:mt-16 mb-8 sm:mb-20">
+      <div className="grid grid-cols-1 md:flex md:items-center md:justify-center gap-2 sm:gap-4  justify-items-center p-2 mt-4 sm:mt-16 mb-8 sm:mb-20">
         <Card
           icon={GDRP}
           title="GDPR Compliant"
@@ -59,7 +59,7 @@ function SecurityCompliance(props: Props) {
               Encryption
             </p>
           </div>
-          <div className="h-6 sm:h-12 w-px bg-custom-dark-grey/40"></div>
+          <div className="h-6 sm:h-12 w-px bg-custom-dark-grey/40"/>
           <div>
             <p className="text-sm sm:text-2xl font-700 font-bold leading-normal text-custom-dark-grey/90 text-center">
               99.9%

@@ -11,8 +11,8 @@ function CustomizeBrand() {
   return (
     <div>
     <div className='bg-[#F8F8F8]'>
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 mt-6 sm:mt-16 sm:ml-12 p-2 sm:p-10">
-         <div className="w-full sm:w-1/2 h-full ">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-12 mt-6 sm:mt-16 sm:ml-12 p-2 sm:p-10">
+         <div className="w-full lg:w-1/2 h-full ">
           <p className="text-custom-dark-grey/90 text-base sm:text-md sm:text-xl font-bold mt-3">
             Customize Your Brand & Design
           </p>
@@ -41,7 +41,7 @@ function CustomizeBrand() {
             </li>
           </ul>
         </div>
-        <div className="w-full sm:w-1/2 h-full flex items-center justify-center">
+        <div className="w-full lg:w-1/2 h-full flex items-center justify-center">
           <img
             src="/images/brand.png"
             alt="Real-time Data"
@@ -51,12 +51,12 @@ function CustomizeBrand() {
        </div>
       </div>
 
-      <div className="flex flex-col gap-4 md:flex-row m-2 sm:m-20">
+      <div className="flex flex-col gap-4 md:flex-row m-2 my-10  sm:m-20">
         {
           cards.map((card, index) => {
 
             return (
-              <div key={index} className="w-full sm:w-1/3 bg-custom-dark-grey/4 p-4 sm:p-8 border border-custom-dark-grey/10 rounded-lg">
+              <div key={index} className="w-full lg:w-1/3 bg-custom-dark-grey/4 p-4 sm:p-8 border border-custom-dark-grey/10 rounded-lg">
                 <div className='w-12 h-12 bg-custom-primary rounded-lg p-1 sm:p-2 flex items-center justify-center'>
                   <card.icon className='text-white w-6 h-6' />
                 </div>

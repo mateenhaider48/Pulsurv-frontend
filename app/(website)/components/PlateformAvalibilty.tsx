@@ -1,14 +1,9 @@
 import {
-  androidIcon,
-  ArrowIcon,
   complianceIcon,
   customConfiguration,
   DataComplete,
-  EditIcon,
   enhancedIcon,
-  ImportIcon,
   MobileIcon,
-  RecipientIcon,
   WebPlatformIcon,
 } from "@/components/svg-icons";
 import Card from "@/components/ui/Card";
@@ -43,8 +38,8 @@ function PlatformAvailability(props: Props) {
   ];
 
   return (
-    <div className="h-auto bg-[#123458]">
-      <div>
+    <div className="h-auto bg-[#123458] pb-1">
+      <div >
         <p className="font-bold text-md sm:text-2xl leading-normal text-center text-custom-white py-5">
           Platform Availability & Deployment
         </p>
@@ -65,7 +60,7 @@ function PlatformAvailability(props: Props) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:flex gap-2 sm:gap-4 p-4  justify-items-center ">
+      <div className="grid grid-cols-1 sm:flex p-4  justify-center items-center ">
         <Card
           icon={WebPlatformIcon}
           title="Web Platform"
@@ -100,7 +95,7 @@ function PlatformAvailability(props: Props) {
       </div>
 
      
-      <div className="flex flex-wrap gap-2 sm:gap-4 md:px-30 m-4">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 sm:px-30 m-4">
         {cardData.map((item, index) => (
           <div
             key={index}
@@ -114,7 +109,10 @@ function PlatformAvailability(props: Props) {
           </div>
         ))}
       </div>
-      <button className="w-44 sm:w-64 block mx-auto h-8 sm:h-12  bg-custom-secondary rounded-xl text-[10px] sm:text-sm leading-tight text-custom-white">Request Self-Hosted Setup</button>
+      <div className="my-10">
+  <button className="w-44 sm:w-64 block mx-auto h-8 sm:h-12 bg-custom-secondary rounded-xl text-[10px] sm:text-sm leading-tight text-custom-white">Request Self-Hosted Setup</button>
+      </div>
+    
     </div>
   );
 }

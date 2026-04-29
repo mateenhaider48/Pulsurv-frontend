@@ -1,8 +1,41 @@
+"use client"
 import { title } from "process";
 import React from "react";
 
+type Section = {
+  id: number;
+  title: string;
+  detail?: string;
+
+  heading_1?: string;
+  paragraph?: string;
+  lists_head_1?: string[];
+
+  heading_2?: string;
+  paragraph_2?: string;
+  lists_head_2?: string[];
+
+  heading_3?: string;
+  paragraph_3?: string;
+  lists_head_3?: string[];
+
+  heading_4?: string;
+  paragraph_4?: string;
+  lists_head_4?: string[];
+
+  heading_5?: string;
+  paragraph_5?: string;
+
+  heading_6?: string;
+  paragraph_6?: string;
+
+  heading_7?: string;
+  paragraph_7?: string;
+
+  list_7?: { title: string; desc: string }[];
+};
 function InformationCollect() {
-  const Sections = [
+  const Sections:Section[] = [
     {
       id: 1,
       title: "1. Information We Collect",
@@ -159,12 +192,24 @@ function InformationCollect() {
       heading_7: "Legal Basis for Processing",
       paragraph_7:
         "We process personal data based on one or more of the following legal grounds:",
-      list_7:[
-        {title: "Contractual necessity:", desc:"Processing is necessary to fulfill our contract with you (providing the Pulsurv service)"},
-        {title:"Legitimate interests:", desc:"Processing is necessary for our legitimate business interests (e.g., improving our platform, security)"},
-        {title:"Consent:",desc:"You have provided explicit consent for specific processing activities"},
-        {title:"Legal obligation:",desc:"Processing is required to comply with legal or regulatory requirements"}
-      ]  
+      list_7: [
+        {
+          title: "Contractual necessity:",
+          desc: "Processing is necessary to fulfill our contract with you (providing the Pulsurv service)",
+        },
+        {
+          title: "Legitimate interests:",
+          desc: "Processing is necessary for our legitimate business interests (e.g., improving our platform, security)",
+        },
+        {
+          title: "Consent:",
+          desc: "You have provided explicit consent for specific processing activities",
+        },
+        {
+          title: "Legal obligation:",
+          desc: "Processing is required to comply with legal or regulatory requirements",
+        },
+      ],
     },
 
     {
@@ -274,47 +319,45 @@ function InformationCollect() {
 
   return (
     <div className="min-h-40">
-      <div className="w-60 h-16 rounded-xl border border-custom-dark-grey/10 bg-custom-dark-grey/5 flex items-center justify-center mt-10 ml-3 lg:ml-240 0">
+      <div className="w-60 h-16 rounded-xl border border-custom-dark-grey/10 bg-custom-dark-grey/5 flex flex-1 ml-auto mr-5 items-center justify-center mt-10  ">  
         <select
           id="table-of-contents"
           defaultValue=""
+          onChange={(e) => {
+            const sectionNum = e.target.value.split(".")[0];
+            document
+              .getElementById(`section-${sectionNum}`)
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
           className="w-55 h-10 bg-transparent text-sm text-custom-dark-grey/90 px-2 border-[1.5px] border-custom-secondary font-medium rounded-lg  py-3 cursor-pointer"
         >
           <option value="" disabled hidden>
             Table of Contents
           </option>
-          <option value="1. Information We Collect">
-            1. Information We Collect
-          </option>
-          <option value="2. How We Use Information">
-            2. How We Use Information
-          </option>
-          <option value="3. Survey Data & Privacy">
-            3. Survey Data & Privacy
-          </option>
-          <option value="4. Data Protection & Security">
-            4. Data Protection & Security
-          </option>
-          <option value="5. GDPR & Legal Compliance">
-            5. GDPR & Legal Compliance
-          </option>
-          <option value="6. Accessibility & Responsible Design">
-            6. Accessibility & Responsible Design
-          </option>
-          <option value="7. Third-Party Services">
-            7. Third-Party Services
-          </option>
-          <option value="8. Your Rights">8. Your Rights</option>
-          <option value="9. Policy Updates">9. Policy Updates</option>
-          <option value="10. Contact Information">
-            10. Contact Information
-          </option>
+          {[
+            "1. Information We Collect",
+            "2. How We Use Information",
+            "3. Survey Data & Privacy",
+            "4. Data Protection & Security",
+            "5. GDPR & Legal Compliance",
+            "6. Accessibility & Responsible Design",
+            "7. Third-Party Services",
+            "8. Your Rights",
+            "9. Policy Updates",
+            "10. Contact Information",
+          ].map((val, index) => (
+            <option key={index} value={val}>
+              {val}
+            </option>
+          ))}
         </select>
       </div>
 
       {Sections.map((section, i) => {
         return (
-          <section className="mt-6 sm:mt-16 px-4 md:px-20 lg:px-50 " key={i}>
+          <section 
+           id={`section-${section.id}`}
+          className="mt-6 sm:mt-16 px-4 md:px-20 lg:px-50 " key={i}>
             <h1 className="text-xl sm:text-4xl text-custom-dark-grey/90 font-bold mb-2">
               {section.title}
             </h1>
@@ -391,13 +434,13 @@ function InformationCollect() {
                         </span>{" "}
                         privacy@pulsurv.com
                       </p>
-                       <p className="px-6 mt-2 sm:mt-4 text-sm sm:text-base text-custom-dark-grey/70 font-medium">
+                      <p className="px-6 mt-2 sm:mt-4 text-sm sm:text-base text-custom-dark-grey/70 font-medium">
                         <span className="text-custom-dark-grey/90 font-semibold">
                           General Contact:
                         </span>
                         Visit our Contact page
                       </p>
-                       <p className="px-6 mt-2 sm:mt-4 text-sm sm:text-base text-custom-dark-grey/70 font-medium">
+                      <p className="px-6 mt-2 sm:mt-4 text-sm sm:text-base text-custom-dark-grey/70 font-medium">
                         <span className="text-custom-dark-grey/90 font-semibold">
                           Response Time:
                         </span>{" "}
@@ -512,12 +555,15 @@ function InformationCollect() {
                   {section.paragraph_7}
                 </p>
                 <ul className="px-4 text-custom-dark-grey/50 text-sm sm:text-base">
-                    {section.list_7?.map((item, index) => (
-                      <li key={index} className="mb-2">
-                        <span className="text-custom-dark-grey/70 font-semibold">{item.title}</span><br/> {item.desc}
-                      </li>
-                    ))}
-                  </ul>
+                  {section.list_7?.map((item, index) => (
+                    <li key={index} className="mb-2">
+                      <span className="text-custom-dark-grey/70 font-semibold">
+                        {item.title}
+                      </span>
+                      <br /> {item.desc}
+                    </li>
+                  ))}
+                </ul>
                 )
               </>
             )}

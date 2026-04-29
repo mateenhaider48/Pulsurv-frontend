@@ -1,11 +1,13 @@
 import React from "react";
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 export default function PulsurvSurveys() {
+  const router = useRouter()
   return (
-    <div className=" bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] ">
+    <div className="bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] ">
       <div className="flex flex-col md:flex-row  min-h-screen">
-        <div className="flex flex-col justify-center p-10 max-w-3xl z-10">
+        <div className="flex flex-col justify-center p-10 max-w-3xl ">
           <p className="font-bold text-3xl sm:text-6xl   leading-auto text-custom-secondary">
             Pulse Surveys{" "}
             <span className="text-custom-dark-grey">
@@ -28,6 +30,7 @@ export default function PulsurvSurveys() {
               children="Get Started"
             />
             <Button
+            onClick={()=>router.push("/pricing")}
               className="w-full sm:w-auto h-12 rounded-lg px-4 sm:px-8 leading-normal font-medium text-custom-secondary border border-custom-secondary"
               children="See Plans"
             />

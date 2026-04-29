@@ -15,7 +15,7 @@ function CollectRealTimeFeedback() {
   ];
   return (
     <div className="min-h-screen">
-      <div className="m-3 sm:m-15 p-[1px] rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
+      <div className="m-3 md:m-15 p-[1px] rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
         <div className="bg-white rounded-xl p-4 ">
           <div className="flex flex-1 flex-col md:flex-row items-center justify-between gap-2 sm:gap-4">
             <div>

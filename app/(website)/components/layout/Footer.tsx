@@ -3,8 +3,8 @@ import { GitHubIcon, LinkedinIcon, TwitterIcon } from "@/components/svg-icons";
 export default function Footer() {
   return (
     <footer className="h-auto w-full  bg-[#123458] text-custom-white">
-      <div className="flex flex-1">
-        <div className="w-48 sm:w-65 ml-2 sm:ml-20 mt-5 sm:mt-10">
+      <div className="flex flex-1 ">
+        <div className="w-48 lg:w-65 ml-2 md:ml-10 mt-5 sm:mt-10">
           <img src="/images/pulsurvFooter.png" className="w-[95px] sm:w-[113px] h-[14px] sm:h-[18px]" />
           <p className="text-custom-white text-[10px] sm:text-sm leading-tight mt-2 sm:mt-4">
             AI-powered pulse surveys for customer and employee feedback.
@@ -29,7 +29,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="sm:ml-50">
+        <div className="lg:ml-50">
           <div>
             <p className="text-sm sm:text-lg text-custom-white ml-2 sm:ml-10 mt-5 sm:mt-10">Contact</p>
             <ul>
@@ -44,7 +44,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="sm:ml-50">
+        <div className="lg:ml-50">
           <div>
             <p className="text-sm sm:text-lg text-custom-white ml-2 sm:ml-10 mt-5 sm:mt-10">Legal</p>
             <ul>
@@ -62,10 +62,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full h-px mt-4 sm:mt-16 bg-custom-white"/>
-      <div className="flex ml-2 sm:ml-110 mt-2 sm:mt-4 gap-10 sm:gap-100">
-        <p className="text-[10px] sm:text-sm text-center">@ {new Date().getFullYear()} Pulsurv. All rights reserved.</p>
-        <div className="flex gap-2 sm:gap-8 mt-1">
+      <div className="w-full h-px mt-4 lg:mt-16 bg-custom-white"/>
+      <div className="flex flex-1 p-4 ">
+        <div className="text-[10px] sm:text-sm text-center">@ {new Date().getFullYear()} Pulsurv. All rights reserved.</div>
+        <div className="flex ml-auto gap-5 md:gap-10">
           <TwitterIcon />
           <LinkedinIcon />
           <GitHubIcon />

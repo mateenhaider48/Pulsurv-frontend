@@ -3,15 +3,15 @@ import React from "react";
 function CreateAndManageGroup() {
   return (
     <div className="rotate-0 opacity-100 bg-gradient-to-b from-[#E3F1FF] to-[#FFFFFF]">
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 mt-6 sm:mt-16 sm:ml-12 p-2 sm:p-10">
-        <div className="w-full sm:w-1/2 h-full flex items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-12 md:m-10 p-2 lg:p-10">
+        <div className="w-full lg:w-1/2 h-full flex items-center justify-center">
           <img
             src="/images/CreateGroup.png"
             alt="Real-time Data"
             className="w-full h-auto mt-4"
           />
         </div>
-        <div className="w-full sm:w-1/2 h-full ">
+        <div className="w-full lg:w-1/2 h-full ">
           <p className="text-custom-dark-grey/90 text-base sm:text-md sm:text-xl font-bold mt-3">
             Create & Manage Groups
           </p>

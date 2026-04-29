@@ -32,12 +32,12 @@ function GroupAndRecipientManagement(props: Props) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex gap-2 sm:gap-4 p-4">
+      <div className="grid grid-cols-2 place-items-center md:grid-cols-3 lg:flex items-center justify-center gap-2 sm:gap-4 px-8">
         <Card
           icon={RecipientIcon}
           title="Create Recipient Groups"
           text="Organize your audience into logical segments"
-          className="w-auto h-[160px] sm:h-[185px]"
+          className="w-auto h-[162px] sm:h-[185px]"
           size="medium"
         />
 
@@ -45,7 +45,7 @@ function GroupAndRecipientManagement(props: Props) {
           icon={ImportIcon}
           title="Import via CSV"
           text="Bulk upload recipients with contact information"
-          className="w-auto h-[160px] sm:h-[185px]"
+          className="w-auto h-[162px] sm:h-[185px]"
           size="medium"
         />
 
@@ -53,7 +53,7 @@ function GroupAndRecipientManagement(props: Props) {
           icon={EditIcon}
           title="Edit & Manage"
           text="Update group members and contact details easily"
-          className="w-auto h-[160px] sm:h-[185px]"
+          className="w-auto h-[162px] sm:h-[185px]"
           size="medium"
         />
 
@@ -66,12 +66,12 @@ function GroupAndRecipientManagement(props: Props) {
         />
       </div>
 
-      <div className="h-auto w-auto  m-2 md:m-4 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
-        <div className="flex m-4">
+      <div className="h-auto w-auto  m-2 md:m-8 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
+        <div className="flex flex-1 m-4">
           <p className="font-semibold text-sm sm:text-base leading-normal text-custom-dark-grey/90">
             Recipient Groups
           </p>
-          <p className="text-sm sm:text-lg text-custom-secondary cursor-pointer">+ New Group</p>
+          <p className="ml-auto text-sm sm:text-lg text-custom-secondary cursor-pointer">+ New Group</p>
         </div>
 
         <div className="w-auto h-px m-4 bg-custom-dark-grey/30"/>

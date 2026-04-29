@@ -82,8 +82,8 @@ export default function Navbar() {
       </header>
 
       <div
-        className={`fixed top-20 left-0 right-0 z-40 md:hidden bg-custom-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
-          menuOpen ? "max-h-96 border-t border-custom-dark-grey/10" : "max-h-0"
+        className={`fixed top-10 left-0 right-0 z-40 md:hidden bg-custom-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+          menuOpen ? "max-h-100 border-t border-custom-dark-grey/10" : "max-h-0"
         }`}
       >
         <nav className="flex flex-col px-6 py-4 gap-1">
@@ -105,7 +105,7 @@ export default function Navbar() {
             );
           })}
 
-          <div className="flex flex-col gap-3 pt-4 pb-2">
+          <div className="flex flex-col gap-3 pt-2 pb-4">
             <Button
               className="text-custom-dark-grey/90 font-normal text-base w-full"
               children="Login"

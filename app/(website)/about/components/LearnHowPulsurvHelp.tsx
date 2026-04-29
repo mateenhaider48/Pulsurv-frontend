@@ -1,6 +1,5 @@
 import { DoneIcon } from '@/components/svg-icons'
 import Button from '@/components/ui/Button'
-import React from 'react'
 
 function LearnHowPulsurvHelp() {
   return (

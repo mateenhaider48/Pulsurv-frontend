@@ -13,31 +13,31 @@ function OurCommitment() {
     ]
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
-      <p className="text-custom-dark-grey/90 font-bold text-center pt-10 text-4xl">
+      <p className="text-custom-dark-grey/90 font-bold text-center pt-4 sm:pt-10 text-2xl sm:text-4xl">
         Our Commitment
       </p>
-      <p className="text-custom-dark-grey/70 text-base text-center mt-2 ">
+      <p className="text-custom-dark-grey/70 text-sm sm:text-base text-center mt-2 ">
         Pulsurv is more than a tool—it's a commitment to helping organizations
         listen <br className="hidden md:block" /> better and act with integrity.
       </p>
 
-      <div className="grid grid-cols-4 gap-4 px-28 py-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-28 py-8">
         {
             cards.map((item,index)=>{
                 return(
                     <div className="w-full h-full border border-custom-dark-grey/30 group hover:border-custom-secondary text-center mx-auto rounded-md bg-white">
-                        <div className="w-12 h-12 flex items-center my-5 ml-25 justify-center  rounded-md bg-custom-secondary">
+                        <div className="w-10 sm:w-12 h-10 sm:h-12 flex items-center  mx-auto my-4 justify-center  rounded-md bg-custom-secondary">
                             <item.icon/>
                             </div>
 
-                            <p className="text-custom-dark-grey/90 font-bold group-hover:text-custom-secondary">{item.title}</p>
-                            <p className="text-sm p-2 text-custom-dark-grey/90 mb-2">{item.text}</p>
+                            <p className="text-custom-dark-grey/90 text-sm sm:text-md font-bold group-hover:text-custom-secondary">{item.title}</p>
+                            <p className="text-[10px] sm:text-sm p-2 text-custom-dark-grey/90 mb-2">{item.text}</p>
                         </div>
                 )
             })
         }
       </div>
-      <div className="bg-custom-primary p-6 rounded-lg mx-28 my-10 ">
+      <div className="bg-custom-primary p-6 rounded-lg m-10 my-4 sm:my-10 ">
         <p className="px-6 mt-4 text-base sm:text-md text-white text-center font-bold">
           We're Here to Help You Listen
         </p>

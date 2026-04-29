@@ -74,29 +74,29 @@ function CreatePulseSurveys() {
           </ul>
         </div>
         <div>
-          <div className="w-[300px] md:w-[431px] bg-custom-white border border-[#E5E7EB] border-2 rounded-lg h-[195px] rotate-0 opacity-100 absolute top-[1200px] lg:top-[935px] lg:left-[600px] border-[0.39px] rounded-[5.91px]">
+          <div className="w-[280px] md:w-[431px] bg-custom-white border border-[#E5E7EB] border-2 rounded-lg h-[195px] rotate-0 opacity-100 absolute top-[1300px] md:top-[930px] lg:top-[935px] left-0 md:left-[200px] lg:left-[505px] border-[0.39px] rounded-[5.91px]">
             <p className="text-sm sm:text-md font-semibold leading-normal ml-2 sm:ml-4 mt-2 text-custom-dark-grey/90">
               Survey Basics Info
             </p>
-            <p className="font-semibold text-sm text-custom-dark-grey/90 ml-2 sm:ml-4 mt-2">
+            <p className="font-semibold text-[10px] sm:text-sm text-custom-dark-grey/90 ml-2 sm:ml-4 mt-2">
               Survey Name <span className="text-custom-red">*</span>
             </p>
             <input
               type="text"
               disabled
               value={"Enter survey name"}
-              className="w-[260px] md:w-[400px] border-1 ml-2 sm:ml-4 text-custom-dark-grey/50 mt-1  border-[#E5E7EB] h-8 rotate-0 opacity-100 border-[0.59px] rounded-[5.91px] pt-[7.1px] pr-[9.46px] pb-[7.1px] pl-[9.46px]"
+              className="w-[260px] md:w-[400px] border-1 text-[10px] text-sm  ml-2 sm:ml-4 text-custom-dark-grey/50 mt-1  border-[#E5E7EB] h-8 rotate-0 opacity-100 border-[0.59px] rounded-[5.91px] pt-[7.1px] pr-[9.46px] pb-[7.1px] pl-[9.46px]"
             />
-            <p className="font-semibold text-sm text-custom-dark-grey/90 ml-4 mt-2">
+            <p className="font-semibold text-sm sm:text-md text-custom-dark-grey/90 ml-4 mt-2">
               Survey Description{" "}
-              <span className="text-custom-dark-grey/50 font-semibold text-sm">
+              <span className="text-custom-dark-grey/50 font-semibold text-[10px] sm:text-sm">
                 (Optional){" "}
               </span>
             </p>
             <input
               disabled
               value="Add a description to help identify this survey internally"
-              className="w-[260px] md:w-[400px] h-12 ml-4 mt-1 border-1 border-[#E5E7EB] rounded-sm px-2 text-custom-dark-grey/50 leading-[28.39px] opacity-100"
+              className="w-[260px] md:w-[400px] text-[10px] sm:text-sm h-8 sm:h-12 ml-4 mt-1 border-1 border-[#E5E7EB] rounded-sm px-2 text-custom-dark-grey/50 leading-[28.39px] opacity-100"
             />
           </div>
           <img
@@ -133,25 +133,25 @@ function CreatePulseSurveys() {
             Distribute Seamlessly
           </p>
           <ul className="text-sm sm:text-md mt-4 text-custom-dark-grey/50">
-            <li className="flex gap-2 mt-3">
+            <li className="flex gap-2 mt-3 lg:mt-6">
              <CorrectIcon className="w-4 h-4"/>
               Reach respondents through multiple channels such as email, SMS,
               and in-app notifications
             </li>
-            <li className="flex gap-2  mt-3 sm:mt-6">
+            <li className="flex gap-2  mt-3 lg:mt-6">
              <CorrectIcon className="w-4 h-4"/>
               Share surveys easily using QR codes or web embeds.
             </li>
-            <li className="flex gap-2 mt-3 sm:mt-6">
+            <li className="flex gap-2 mt-3 lg:mt-6">
              <CorrectIcon className="w-4 h-4"/>
               Share surveys easily using QR codes or web embeds..
             </li>
-            <li className="flex gap-2 mt-3 sm:mt-6">
+            <li className="flex gap-2 mt-3 lg:mt-6">
               <CorrectIcon className="w-4 h-4"/>
               Distribute surveys quickly and efficiently across platforms.
             </li>
           </ul>
-          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight mt-6 sm:mt-14">
+          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight mt-6 lg:mt-24">
             Distribution Method
           </p>
           <p className="text-custom-dark-grey/60 text-sm sm:text-base leading-normal tracking-tight mt-1">

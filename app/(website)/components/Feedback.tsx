@@ -1,12 +1,14 @@
+"use client"
 import { DoneIcon } from "@/components/svg-icons";
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface Props {}
 
 function Feedback(props: Props) {
   const {} = props;
-
+  const router = useRouter()
   return (
     <div className="w-full h-auto py-10 bg-gradient-to-b from-[#E3F1FF] to-white">
       <div>
@@ -30,6 +32,7 @@ function Feedback(props: Props) {
           }
         />
         <Button
+        onClick={()=>router.push("/pricing")}
           className="w-30 sm:w-48 h-8 sm:h-12 rounded-lg  py-2 sm:py-4 px-4 sm:px-8 leading-tight font-500 text-custom-secondary  font-base  border border-1 border-custom-secondary"
           children="View Pricing"
         />

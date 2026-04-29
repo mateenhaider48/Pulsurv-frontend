@@ -4,6 +4,7 @@ import {
   Analytics,
   AnalyticsIcons,
   ExportIcon,
+  PreQuestion,
   WhatsAppIcon,
 } from "@/components/svg-icons";
 import { ResponseDistribution, SentimentDonut } from "./ResponseDistribution";
@@ -63,7 +64,7 @@ function AnalyticsAiReporting(props: Props) {
 
           <div className="flex gap-4">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-custom-dark-grey/10 flex items-center justify-center flex-shrink-0">
-              <Analytics  className="text-black w-7 h-7"/>
+              <PreQuestion/>
             </div>
             <div className="flex flex-col">
               <p className="font-bold text-sm sm:text-base text-custom-dark-grey/90">

@@ -85,7 +85,7 @@ function WhyPulsurvExsits() {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 mt-6 sm:mt-16 sm:ml-12 py-20 px-2 sm:px-50">
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 py-4 px-10 lg:px-50">
         {cards_for_why.map((card, index) => (
           <div
             key={index}
@@ -122,14 +122,14 @@ function WhyPulsurvExsits() {
           decision-making—not replace human judgment.
         </p>
       </div>
-      <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-20">
+      <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-2 sm:p-20">
         {cards_for_who.map((card, index) => {
           return (
             <div
               key={index}
-              className="w-full h-full bg-custom-dark-grey/1 border hover:border-1 rounded-lg border-custom-dark-grey/3 hover:border-custom-secondary group p-4"
+              className="w-full h-full bg-custom-dark-grey/2 border hover:border-1 rounded-lg border-custom-dark-grey/10 hover:border-custom-secondary group p-4"
             >
-              <div className="w-12 h-12 bg-custom-secondary/20 rounded-lg border flex items-center group-hover:bg-custom-secondary justify-center">
+              <div className="w-12 h-12 bg-custom-secondary/10 rounded-lg border flex items-center group-hover:bg-custom-secondary justify-center">
                 <card.icon className="w-6 h-6 text-custom-secondary group-hover:text-white transition-colors duration-300 m-3" />
               </div>
               <p className="text-custom-dark-grey/90 font-bold group-hover:text-custom-secondary mt-4">

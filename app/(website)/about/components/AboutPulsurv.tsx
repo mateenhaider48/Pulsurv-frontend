@@ -3,7 +3,7 @@ import React from 'react'
 function AboutPulsurv() {
   return (
     <div className='bg-gradient-to-b from-[#FFFFFF] to-[#F9FAFB] '>
-      <div className='flex flex-col md:flex-row items-center justify-between mt-5 mb-5 sm:mt-10 sm:mb-10'>
+      <div className='flex flex-col md:flex-row items-center justify-between mb-10'>
         <div>
         <p className="font-bold text-2xl sm:text-4xl leading-normal mx-5 sm:mx-7 md:mx-10  text-left text-custom-dark-grey/90 ">
           About <span className='text-custom-secondary'>Pulsurv</span>

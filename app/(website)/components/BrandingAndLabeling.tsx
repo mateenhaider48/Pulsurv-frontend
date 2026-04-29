@@ -24,7 +24,7 @@ function BrandingAndLabeling(props: Props) {
           Make Pulsurv truly yours with comprehensive branding controls
         </p>
       </div>
-      <div className="grid grid-cols-1 md:flex items-center justify-center p-4 md:block md:mx-auto  sm:mt-10 gap-1 sm:gap-10">
+      <div className="grid grid-cols-1 place-items-center md:flex md:items-center md:justify-center p-4 md:block mx-auto  sm:mt-10 gap-1 sm:gap-10">
         <Card
           icon={Themes}
           title="Base Colors & Themes"

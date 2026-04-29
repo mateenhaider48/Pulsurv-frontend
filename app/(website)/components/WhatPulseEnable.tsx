@@ -22,14 +22,14 @@ function WhatPulseEnable() {
   ];
   return (
     <div className="bg-custom-white ">
-      <p className="leading-normal font-bold text-lg sm:text-2xl text-center text-custom-dark-grey/100 py-20">
+      <p className="leading-normal font-bold text-lg sm:text-2xl text-center text-custom-dark-grey/100 pt-20">
         What Pulsurv Enables
       </p>
       <p className="leading-normal font-bold text-sm text-center  text-custom-dark-grey/70">
         A complete platform for gathering, distributing, and understanding
         feedback
       </p>
-      <div className="flex flex-wrap justify-center gap-8 mt-10 px-4 py-4 ">
+      <div className="flex flex-wrap justify-center gap-8 my-10 px-4 py-4 ">
         {cards.map((card, index) => {
           const Icon = card.icon;
           return (
