@@ -122,12 +122,12 @@ function WhyPulsurvExsits() {
           decision-making—not replace human judgment.
         </p>
       </div>
-      <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-2 sm:p-20">
+      <div className="grid grid-cols-1 place-items-center  sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-2 sm:p-20">
         {cards_for_who.map((card, index) => {
           return (
             <div
               key={index}
-              className="w-full h-full bg-custom-dark-grey/2 border hover:border-1 rounded-lg border-custom-dark-grey/10 hover:border-custom-secondary group p-4"
+              className="col-span-1 bg-custom-dark-grey/2 border hover:border-1 rounded-lg border-custom-dark-grey/10 hover:border-custom-secondary group p-4"
             >
               <div className="w-12 h-12 bg-custom-secondary/10 rounded-lg border flex items-center group-hover:bg-custom-secondary justify-center">
                 <card.icon className="w-6 h-6 text-custom-secondary group-hover:text-white transition-colors duration-300 m-3" />

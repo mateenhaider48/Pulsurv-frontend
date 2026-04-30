@@ -1358,3 +1358,10 @@ export function PreQuestion(){
 
   )
 }
+export function LineChart({ className, color = "#07233B" }: { className?: string; color?: string }) {
+  return (
+    <svg width="53" height="36" viewBox="0 0 53 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M11.9258 31.9366L19.0228 17.7425L26.1198 24.8396L33.2169 10.6455L40.3139 14.194" stroke={color} strokeWidth="2.12911"/>
+    </svg>
+  )
+}

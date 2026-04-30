@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-custom-dark-grey/20 bg-custom-white text-black">
+      <header className="fixed top-0 left-0 right-0 z-50  border-b border-custom-dark-grey/20 bg-custom-white text-black">
         <div className="mx-auto flex max-w-auto h-auto p-4 items-center justify-between ">
           {/* Logo */}
           <Link href="/">
@@ -29,8 +29,8 @@ export default function Navbar() {
               className="h-4 w-25 sm:h-5 sm:w-28"
             />
           </Link>
-
-          {/* Desktop Nav */}
+   
+          
           <nav className="hidden md:flex items-center gap-8 lg:gap-12 text-base leading-normal">
             {navLink.map((link) => {
               const isActive = pathname === link.path;
@@ -50,8 +50,8 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Desktop Buttons */}
-          <div className="hidden md:flex gap-4 items-center">
+          
+          <div className="hidden z-10  md:flex gap-4 items-center">
             <Button
               className="text-custom-dark-grey/90 font-normal text-base"
               children="Login"
@@ -61,8 +61,9 @@ export default function Navbar() {
               children="Get Started"
             />
           </div>
+          
 
-          {/* Hamburger Button */}
+          
           <button
             className="md:hidden flex flex-col justify-center items-center gap-1.5 w-6 sm:w-9 h-6 sm:h-9"
             onClick={() => setMenuOpen((prev) => !prev)}

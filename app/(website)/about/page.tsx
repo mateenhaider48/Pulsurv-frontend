@@ -1,5 +1,6 @@
 import AboutPulsurv from "./components/AboutPulsurv";
 import AiPowerInsight from "./components/AiPowerInsight";
+import Classes from "./components/Classes";
 import CollectRealTimeFeedback from "./components/CollectRealTimeFeedback";
 import CreateAndManageGroup from "./components/CreateAndManageGroup";
 import CreatePulseSurveys from "./components/CreatePulseSurveys";
@@ -24,6 +25,7 @@ export default function About() {
             <PrivacyTrustCompliance/>
             <OurCommitment/>
             <LearnHowPulsurvHelp/>
+            {/* <Classes/> */}
             </div>
     )
 }

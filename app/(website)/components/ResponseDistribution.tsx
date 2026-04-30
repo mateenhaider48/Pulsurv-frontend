@@ -13,6 +13,7 @@ import {
   ResponsiveContainer,
   Legend,
   TooltipContentProps,
+  CartesianGrid,
 } from "recharts";
 
 // ----------------- Bar Chart -----------------
@@ -239,13 +240,59 @@ export function SentimentCircle({text}:{text?:string}) {
                         color: data.color,
                       }}
                     >
-                      {data.name}: {data.value}%
+                      {data.name}{data.value}%
                     </span>
                   </div>
                 );
               }}
             />
           </PieChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+}
+
+
+export function MultipleChoiceChart({ text, barData }: { text?: string; barData: barData }) {
+  const Bar_Colors = ["#10B981", "#34D399", "#FBBF24", "#FB923C", "#EF4444"];
+
+  return (
+    <div className="h-full w-full rounded-md p-1">
+      <div className="flex flex-1">
+        <p className="text-[8px] font-semibold text-custom-dark-grey/90">
+          {text || "Response Distribution"}
+        </p>
+        <div className="text-[8px] bg-custom-dark-grey/20 p-1 rounded-xl ml-auto font-semibold text-custom-dark-grey/90">
+          Multiple Choices
+        </div>
+      </div>
+      <div className="h-[160px] sm:h-[120px] max-w-full">
+        <ResponsiveContainer width="100%" height="90%">
+          <BarChart
+            data={barData}
+            margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
+          >
+            <CartesianGrid strokeDasharray="5 4" stroke="rgba(0,0,0,0.05)" />
+            <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+            <YAxis
+              ticks={[0, 45, 90, 135, 180]}
+              domain={[0, 180]}
+              tick={{ fontSize: 8 }}
+            />
+            <Bar
+              dataKey="value"
+              radius={[2, 2, 0, 0]}
+              isAnimationActive={false}
+            >
+              {barData.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={Bar_Colors[index % Bar_Colors.length]}
+                />
+              ))}
+            </Bar>
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </div>

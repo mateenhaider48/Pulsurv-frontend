@@ -1,11 +1,19 @@
 "use client";
 import React from "react";
 import {
+  MultipleChoiceChart,
   ResponseDistribution,
   SentimentCircle,
 } from "../../components/ResponseDistribution";
 
 function CollectRealTimeFeedback() {
+  const secondBarData = [
+    { name: "Strong Agree", value: 87 },
+    { name: "Agree", value: 153 },
+    { name: "Neutral", value: 170 },
+    { name: "Disagree", value: 80 },
+    { name: "Strong Disagree", value: 30 },
+  ];
   const barData = [
     { name: "Manufacturing", value: 87 },
     { name: "Warehouse", value: 93 },
@@ -41,12 +49,18 @@ function CollectRealTimeFeedback() {
                 <li>Stay connected to user needs</li>
               </ul>
             </div>
-            <div className="w-full sm:w-1/2 h-full flex items-center justify-center">
+            <div className="w-full sm:w-1/2 h-full flex items-center relative justify-center">
               <img
                 src="/images/CollectRealTime.png"
                 alt="Real-time Data"
                 className="w-full h-auto mt-4"
               />
+               <div className="border h-44 sm:h-33 w-100 sm:w-full lg:w-100 xl:w-120  rounded-md bg-custom-white absolute z-10 top-38 md:top-48 lg:top-68 xl:top-78  border-custom-dark-grey/10 shadow-md">
+              <MultipleChoiceChart
+                text="Q3. Do you feel the company provides adequate mental health resources?"
+                barData={secondBarData}
+              />
+            </div>
             </div>
           </div>
 

@@ -73,8 +73,8 @@ function CreatePulseSurveys() {
             </li>
           </ul>
         </div>
-        <div>
-          <div className="w-[280px] md:w-[431px] bg-custom-white border border-[#E5E7EB] border-2 rounded-lg h-[195px] rotate-0 opacity-100 absolute top-[1300px] md:top-[930px] lg:top-[935px] left-0 md:left-[200px] lg:left-[505px] border-[0.39px] rounded-[5.91px]">
+        <div className="relative">
+          <div className="w-[280px] md:w-[431px] bg-custom-white border border-[#E5E7EB] border-2 rounded-lg h-[195px] rotate-0 opacity-100 absolute top-76 left-10 lg:-left-22 border-[0.39px] rounded-[5.91px]">
             <p className="text-sm sm:text-md font-semibold leading-normal ml-2 sm:ml-4 mt-2 text-custom-dark-grey/90">
               Survey Basics Info
             </p>
@@ -107,14 +107,21 @@ function CreatePulseSurveys() {
         </div>
       </div>
   </div>
-      <div className="flex flex-col gap-4 md:flex-row my-15 sm:my-46 mx-4 sm:mx-12">
-        <div className="w-full sm:w-1/2 ">
+      <div className="flex flex-col gap-4 md:flex-row my-15 sm:my-46 mx-4 sm:mx-12 ">
+        <div className="w-full sm:w-1/2 relative">
           <img
             src="/images/distributedSeamlessly.png"
             alt="distribute seamlessly"
             className="w-full rounded-xl p-2 h-auto mt-14 rotate-0 opacity-100"
           />
-
+           <div className="w-50 md:w-74 flex items-center justify-start bg-custom-white absolute top-68 left-36 border border-[#E5E7EB] border-1 rounded-lg h-14 ">
+              <div className="w-4 h-4 border-1  mx-2 border-custom-dark-grey/90"/>
+              <div >
+                <p className="text-[11px] tracking-tight text-custom-dark-grey/90 font-semibold">All Employees</p>
+                <p className="text-[10px] tracking-tight text-custom-dark-grey/60">247 recipients</p>
+              </div>
+              
+          </div>
           <div className="flex gap-1 w-1/2">
             <img
               src="/images/attachMedia.png"
@@ -151,7 +158,7 @@ function CreatePulseSurveys() {
               Distribute surveys quickly and efficiently across platforms.
             </li>
           </ul>
-          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight mt-6 lg:mt-24">
+          <p className="text-custom-dark-grey/90 font-bold text-md sm:text-xl leading-normal tracking-tight mt-6 lg:mt-15">
             Distribution Method
           </p>
           <p className="text-custom-dark-grey/60 text-sm sm:text-base leading-normal tracking-tight mt-1">
