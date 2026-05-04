@@ -32,13 +32,13 @@ function SendUsMessage() {
   ];
 
   return (
-    <div className="bg-white">
-      <div className="flex flex-col md:flex-row p-6 gap-10">
+    <div className="min-h-screen bg-white">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row p-6 gap-10">
 
         {/* Form */}
         <div className="border border-gray-200 w-full h-auto rounded-xl opacity-100">
-          <form className="px-8 pb-8 flex flex-col gap-4">
-            <h1 className="font-sans py-6 font-bold text-custom-dark-grey text-2xl leading-8 tracking-normal">
+          <form className="px-8 pb-2 sm:pb-8 flex flex-col gap-2 sm:gap-4">
+            <h1 className="font-sans py-6 font-bold text-custom-dark-grey text-lg sm:text-2xl leading-8 tracking-normal">
               Send Us Message
             </h1>
 
@@ -47,7 +47,7 @@ function SendUsMessage() {
                 Full Name <span className="text-custom-red">*</span>
               </label>
               <input
-                className="w-full border border-custom-dark-grey/10 px-3 py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="Enter your full name"
               />
             </div>
@@ -58,7 +58,7 @@ function SendUsMessage() {
               </label>
               <input
                 type="email"
-                className="w-full border border-custom-dark-grey/10 px-3 py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="you@company.com"
               />
             </div>
@@ -68,7 +68,7 @@ function SendUsMessage() {
                 Organization Name <span className="text-custom-red">*</span>
               </label>
               <input
-                className="w-full border border-custom-dark-grey/10 px-3 py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="Your company name"
               />
             </div>
@@ -90,16 +90,16 @@ function SendUsMessage() {
             />
 
             <div className="flex gap-2 justify-center">
-              <p className="text-custom-dark-grey/60 text-center text-md">
+              <p className="text-custom-dark-grey/60 text-center text-sm sm:text-md">
                 Your information will only be used to respond to your inquiry.
-                <span className="text-custom-secondary text-md">{" "} Privacy Policy</span>
+                <span className="text-custom-secondary text-sm sm:text-md">{" "} Privacy Policy</span>
               </p>
             </div>
           </form>
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col gap-6 lg:pr-14">
+        <div className="flex flex-col gap-4 sm:gap-6 lg:pr-14">
           {card.map((data, index) => {
             const Icon = data.icon;
             return (
@@ -113,37 +113,37 @@ function SendUsMessage() {
               >
                 <div className="flex flex-row gap-3">
                   <div
-                    className={`w-12 h-12 rounded-xl ${
+                    className={`w-10 sm:w-12 h-10 sm:h-12 rounded-xl ${
                       index == 2
                         ? "bg-[#DBEAFE]"
                         : "group-hover:bg-custom-secondary bg-custom-primary"
                     } flex items-center justify-center`}
                   >
-                    <Icon className="w-6 h-6 text-white" />
+                    <Icon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <p
-                    className={`mt-3 font-bold ${
+                    className={`mt-1 sm:mt-3 font-bold ${
                       index == 2
                         ? "text-custom-dark-grey/70"
                         : "group-hover:text-white text-custom-dark-grey/70"
-                    } text-lg leading-7 tracking-normal`}
+                    } text-base sm:text-lg leading-7 tracking-normal`}
                   >
                     {data.title}
                   </p>
                 </div>
                 <p
-                  className={`text-custom-dark-grey/40 mt-4 ${
+                  className={`text-custom-dark-grey/40 mt-2 sm:mt-4 ${
                     index == 2
                       ? ""
                       : "group-hover:text-[#D1D5DC] text-custom-dark-grey/70"
-                  } font-normal text-base leading-6 tracking-normal`}
+                  } font-normal text-sm sm:text-base leading-6 tracking-normal`}
                 >
                   {data.text}
                 </p>
                 <p
                   className={`text-custom-dark-grey/40 ${
-                    index == 1 || index == 2 ? "group-hover:text-[#D1D5DC]" : "mt-4 text-custom-red/50"
-                  } pb-4 font-normal text-base leading-6 tracking-normal`}
+                    index == 1 || index == 2 ? "group-hover:text-[#D1D5DC]" : "mt-2 sm:mt-4 text-custom-red/50"
+                  } pb-4 font-normal text-sm sm:text-base leading-6 tracking-normal`}
                 >
                   {data.contact}
                 </p>

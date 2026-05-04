@@ -52,7 +52,7 @@ function BrandingAndLabeling(props: Props) {
       <div>
         <img
           src="/images/brandingImg.png"
-          className="h-auto ml-auto p-3 w-auto"
+          className="h-auto mx-auto p-3 w-auto"
         />
       </div>
     </div>

@@ -3,9 +3,9 @@ import React from 'react'
 function AboutPulsurv() {
   return (
     <div className='bg-gradient-to-b from-[#FFFFFF] to-[#F9FAFB] '>
-      <div className='flex flex-col md:flex-row items-center justify-between mb-10'>
+      <div className='w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mb-10'>
         <div>
-        <p className="font-bold text-2xl sm:text-4xl leading-normal mx-5 sm:mx-7 md:mx-10  text-left text-custom-dark-grey/90 ">
+        <p className="font-bold text-2xl sm:text-4xl leading-normal mx-5 sm:mx-7 md:mx-10 mt-10   text-left text-custom-dark-grey/90 ">
           About <span className='text-custom-secondary'>Pulsurv</span>
         </p>
         <p className="text-sm sm:text-base leading-normal text-left mx-5 sm:mx-7 md:mx-10 text-custom-dark-grey/40">
@@ -13,7 +13,7 @@ function AboutPulsurv() {
         </p>
       </div>
       <div>
-        <img src="/images/aboutImg.png" className="w-full sm:w-1/2  sm:mx-25 lg:mx-75  mt-2 p-3  rotate-0 opacity-100 rounded-sm"/>
+        <img src="/images/aboutImg.png" className="w-full sm:w-1/2  sm:mx-25 lg:mx-75  mt-8 p-3  rotate-0 opacity-100 rounded-sm"/>
       </div>
       </div>
     </div>

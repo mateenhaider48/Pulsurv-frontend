@@ -22,10 +22,10 @@ function CollectRealTimeFeedback() {
     { name: "Logistics", value: 90 },
   ];
   return (
-    <div className="min-h-screen">
-      <div className="m-3 md:m-15 p-[1px] rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
+    
+      <div className="m-2 p-[1px] rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
         <div className="bg-white rounded-xl p-4 ">
-          <div className="flex flex-1 flex-col md:flex-row items-center justify-between gap-2 sm:gap-4">
+          <div className="w-full max-w-7xl mx-auto flex flex-1 flex-col md:flex-row items-center justify-between gap-2 sm:gap-4">
             <div>
               <h1 className="text-custom-dark-grey/90 text-md sm:text-lg font-bold">
                 Collect Real-Time Feedback
@@ -55,7 +55,7 @@ function CollectRealTimeFeedback() {
                 alt="Real-time Data"
                 className="w-full h-auto mt-4"
               />
-               <div className="border h-44 sm:h-33 w-100 sm:w-full lg:w-100 xl:w-120  rounded-md bg-custom-white absolute z-10 top-38 md:top-48 lg:top-68 xl:top-78  border-custom-dark-grey/10 shadow-md">
+               <div className="border h-44 sm:h-33 w-70 sm:w-full lg:w-100 xl:w-120  rounded-md bg-custom-white absolute z-10 top-38 md:top-48 lg:top-68 xl:top-78  border-custom-dark-grey/10 shadow-md">
               <MultipleChoiceChart
                 text="Q3. Do you feel the company provides adequate mental health resources?"
                 barData={secondBarData}
@@ -80,7 +80,6 @@ function CollectRealTimeFeedback() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

@@ -12,7 +12,7 @@ function OurCommitment() {
         {icon:ContinousDeploy,title:"Continuous Improvement",text:"We listen to our users and evolve the platform based on real needs, feedback, and industry best practices."}
     ]
   return (
-    <div className="min-h-screen bg-[#F9FAFB]">
+    <div className="bg-[#F9FAFB]">
       <p className="text-custom-dark-grey/90 font-bold text-center pt-4 sm:pt-10 text-2xl sm:text-4xl">
         Our Commitment
       </p>
@@ -21,7 +21,7 @@ function OurCommitment() {
         listen <br className="hidden md:block" /> better and act with integrity.
       </p>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-28 py-8">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-28 py-8">
         {
             cards.map((item,index)=>{
                 return(
@@ -37,7 +37,7 @@ function OurCommitment() {
             })
         }
       </div>
-      <div className="bg-custom-primary p-6 rounded-lg m-10 my-4 sm:my-10 ">
+      <div className="sm:w-full sm:max-w-7xl  m-2 sm:mx-auto bg-custom-primary p-6 rounded-lg  my-4 sm:my-10 ">
         <p className="px-6 mt-4 text-base sm:text-md text-white text-center font-bold">
           We're Here to Help You Listen
         </p>

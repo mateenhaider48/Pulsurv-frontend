@@ -52,7 +52,7 @@ function FlexibleDeployment() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:flex gap-4 my-2 mx-2 sm:mx-10 md:mx-20 ">
+      <div className="w-full max-w-7xl sm:mx-auto grid place-items-center grid-cols-1 md:flex gap-4 my-2  ">
         {deploymentOptions.map((option) => {
           const Icon = option.icon;
           return (
@@ -103,7 +103,7 @@ function FlexibleDeployment() {
           );
         })}
       </div>
-      <div className="flex border bg-[#EFF6FF] h-auto px-6 sm:px-14 py-5 max-w-full mx-2 sm:mx-10 md:mx-20 my-8 border-[#BEDBFF] rounded-lg items-center ">
+      <div className="flex border bg-[#EFF6FF] h-auto px-6 sm:px-14 py-5 max-w-7xl mx-auto  my-10 border-[#BEDBFF] rounded-lg items-center ">
         <p className="text-sm sm:text-base font-semibold text-custom-dark-grey/80 leading-tight">
           Need help deciding? <span className="text-[12px] sm:text-sm text-custom-dark-grey/60 ">
           Our team can help you choose the right deployment option based on your

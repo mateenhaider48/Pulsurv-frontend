@@ -25,13 +25,13 @@ function PrivacyTrustCompliance() {
       },
     ];
   return (
-    <div className="bg-white mb-10">
+    <div className="bg-white">
    <div className=" bg-fire-conic py-20">
       <p className='text-custom-dark-grey/90 font-bold text-center text-2xl sm:text-4xl'>Privacy, Trust & Compliance</p>
       <p className='text-custom-dark-grey/70 text-sm p-1 sm:text-base text-center'>
       Trust is the foundation of every feedback relationship. Pulsurv is committed to protecting the privacy of your<br className='hidden md:block'/> data and the confidentiality of survey respondents.
       </p>
-      <div className="flex grid grid-cols-1 lg:grid-cols-2 gap-6 sm:mt-16 px-2 sm:px-25 ">
+      <div className="w-full max-w-7xl mx-auto flex grid grid-cols-1 lg:grid-cols-2 gap-6 sm:mt-16 px-2 sm:px-25 ">
         {cards.map((card, index) => {
           return (
             <div

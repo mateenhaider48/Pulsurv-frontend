@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
+
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,18 +21,18 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50  border-b border-custom-dark-grey/20 bg-custom-white text-black">
-        <div className="mx-auto flex max-w-auto h-auto p-4 items-center justify-between ">
+        <div className="w-full max-w-7xl mx-auto flex max-w-auto h-auto p-4 items-center justify-between ">
           {/* Logo */}
           <Link href="/">
             <img
               src="/images/pulsurvIcon.png"
               alt="pulsurvLogo"
-              className="h-4 w-25 sm:h-5 sm:w-28"
+              className="h-4 w-25 sm:h-5 sm:w-28 ml-5"
             />
           </Link>
    
           
-          <nav className="hidden md:flex items-center gap-8 lg:gap-12 text-base leading-normal">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-base leading-normal">
             {navLink.map((link) => {
               const isActive = pathname === link.path;
               return (
@@ -119,7 +120,7 @@ export default function Navbar() {
         </nav>
       </div>
 
-      <div className="h-20" />
+      <div className="h-10" />
     </>
   );
 }

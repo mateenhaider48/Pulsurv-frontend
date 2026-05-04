@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedinIcon, TwitterIcon } from "@/components/svg-icons";
 export default function Footer() {
   return (
     <footer className="h-auto w-full  bg-[#123458] text-custom-white">
-      <div className="flex flex-1 ">
+      <div className="w-full max-w-7xl mx-auto flex flex-1 ">
         <div className="w-48 lg:w-65 ml-2 md:ml-10 mt-5 sm:mt-10">
           <img src="/images/pulsurvFooter.png" className="w-[95px] sm:w-[113px] h-[14px] sm:h-[18px]" />
           <p className="text-custom-white text-[10px] sm:text-sm leading-tight mt-2 sm:mt-4">

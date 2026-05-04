@@ -1365,3 +1365,20 @@ export function LineChart({ className, color = "#07233B" }: { className?: string
     </svg>
   )
 }
+export function DropDownIcon({ className }:{className:string}) {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <polyline points="2,4 7,10 12,4" />
+    </svg>
+  );
+}

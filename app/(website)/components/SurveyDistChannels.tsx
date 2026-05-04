@@ -11,7 +11,7 @@ function SurveyDistChannels() {
   return (
     <div className="bg-custom-dark-grey/2 py-10 ">
       <div
-        className="border-[1px]  rounded-lg  w-auto h-auto m-10"
+        className="border-[1px]  rounded-lg  w-full max-w-7xl mx-auto h-auto m-10"
         style={{
           borderImage: "linear-gradient(to bottom, #3333331A, #F75122) 1",
           borderImageSlice: 1,

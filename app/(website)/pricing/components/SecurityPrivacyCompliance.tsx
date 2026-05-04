@@ -17,7 +17,7 @@ function SecurityPrivacyCompliance(props: Props) {
           Enterprise-grade security and compliance built into every plan. Your data and <br className="hidden md:block"/> your respondents' privacy are our top priorities.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4 m-10 md:m-20 justify-items-center ">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4 my-10 md:my-20 justify-items-center ">
                     <Card
                       icon={GDRP}
                       title="GDPR Compliant"

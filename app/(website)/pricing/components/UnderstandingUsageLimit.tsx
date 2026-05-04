@@ -48,14 +48,14 @@ function UnderstandingUsageLimit() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:flex gap-6 mt-4 md:gap-4 p-2 sm:p-15">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 place-items-center md:grid-cols-2 lg:flex gap-6 mt-4 md:gap-6 p-2 sm:p-15">
         {plans.map((plan) => {
           const isImage = typeof plan.icon === "string";
 
           return (
             <div
               key={plan.title}
-              className="w-[300px] sm:w-[330px] h-[280px] sm:h-[370px] border m-auto rounded-lg border-custom-dark-grey/20"
+              className="w-[300px] sm:w-[330px] h-[280px] sm:h-[370px] border  rounded-lg border-custom-dark-grey/20"
             >
               {/* Icon */}
               <div className="w-10 sm:w-12 h-10 sm:h-12 ml-4 mt-3 sm:mt-6 bg-custom-primary rounded-xl flex items-center justify-center text-custom-white p-1 sm:p-2">

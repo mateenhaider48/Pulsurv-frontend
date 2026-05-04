@@ -32,7 +32,7 @@ function AnalyticsAiReporting(props: Props) {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-2 sm:gap-10 lg:gap-0 mt-4 px-4 sm:px-6 sm:mt-14  lg:px-0">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-2 sm:gap-10 lg:gap-0 mt-4 px-4 sm:px-6 sm:mt-14  lg:px-0">
         <div className="flex flex-col gap-10 lg:ml-20">
           <div className="flex gap-4">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-custom-dark-grey/10 flex items-center justify-center flex-shrink-0">

@@ -30,7 +30,7 @@ function AiPowerInsight() {
     },
   ];
   return (
-    <div className="min-h-screen">
+    <div className="max-w-7xl w-full mx-auto">
       <div>
         <p className="text-custom-dark-grey/90 text-xl sm:text-3xl font-bold pt-10 sm:pt-20 text-center">
           AI-Powered Insights

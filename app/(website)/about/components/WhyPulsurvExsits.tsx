@@ -76,7 +76,7 @@ function WhyPulsurvExsits() {
  
   return (
     <div className="rotate-0 opacity-100 bg-gradient-to-b from-[#E3F1FF] to-[#FFFFFF]">
-      <div>
+      <div className="w-full max-w-7xl mx-auto ">
         <p className="text-custom-dark-grey/90 text-xl sm:text-3xl font-bold pt-10 sm:pt-20 text-center">
           Why Pulsurv Exists
         </p>
@@ -85,7 +85,7 @@ function WhyPulsurvExsits() {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 py-4 px-10 lg:px-50">
+      <div className="w-full max-w-7xl mx-auto flex flex-col sm:flex-row gap-6 sm:gap-12 py-4 px-10 lg:px-50">
         {cards_for_why.map((card, index) => (
           <div
             key={index}
@@ -122,7 +122,7 @@ function WhyPulsurvExsits() {
           decision-making—not replace human judgment.
         </p>
       </div>
-      <div className="grid grid-cols-1 place-items-center  sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-2 sm:p-20">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 place-items-center  sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mt-6 sm:mt-16 p-2 sm:p-20">
         {cards_for_who.map((card, index) => {
           return (
             <div

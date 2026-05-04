@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { title } from "process";
 import React from "react";
 
@@ -34,8 +34,12 @@ type Section = {
 
   list_7?: { title: string; desc: string }[];
 };
+import Select from "react-select";
+import { CustomDropdown } from "./CustomDropDown";
+
 function InformationCollect() {
-  const Sections:Section[] = [
+
+  const Sections: Section[] = [
     {
       id: 1,
       title: "1. Information We Collect",
@@ -318,46 +322,37 @@ function InformationCollect() {
   ];
 
   return (
-    <div className="min-h-40">
-      <div className="w-60 h-16 rounded-xl border border-custom-dark-grey/10 bg-custom-dark-grey/5 flex flex-1 ml-auto mr-5 items-center justify-center mt-10  ">  
-        <select
-          id="table-of-contents"
-          defaultValue=""
-          onChange={(e) => {
-            const sectionNum = e.target.value.split(".")[0];
+    <div className="w-full max-w-7xl mx-auto min-h-40">
+      <div className="w-44 sm:w-64 h-12 sm:h-16 rounded-xl border border-custom-dark-grey/10 bg-custom-dark-grey/5 flex flex-1 ml-auto mr-10 items-center justify-center mt-10  ">
+        <CustomDropdown
+          options={[
+            { value: "1", label: "1. Information We Collect" },
+            { value: "2", label: "2. How We Use Information" },
+            { value: "3", label: "3. Survey Data & Privacy" },
+            { value: "4", label: "4. Data Protection & Security" },
+            { value: "5", label: "5. GDPR & Legal Compliance" },
+            { value: "6", label: "6. Accessibility & Responsible Design" },
+            { value: "7", label: "7. Third-Party Services" },
+            { value: "8", label: "8. Your Rights" },
+            { value: "9", label: "9. Policy Updates" },
+            { value: "10", label: "10. Contact Information" },
+          ]}
+          onChange={(value:any) => {
+            const sectionNum = value.split(".")[0];
             document
               .getElementById(`section-${sectionNum}`)
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="w-55 h-10 bg-transparent text-sm text-custom-dark-grey/90 px-2 border-[1.5px] border-custom-secondary font-medium rounded-lg  py-3 cursor-pointer"
-        >
-          <option value="" disabled hidden>
-            Table of Contents
-          </option>
-          {[
-            "1. Information We Collect",
-            "2. How We Use Information",
-            "3. Survey Data & Privacy",
-            "4. Data Protection & Security",
-            "5. GDPR & Legal Compliance",
-            "6. Accessibility & Responsible Design",
-            "7. Third-Party Services",
-            "8. Your Rights",
-            "9. Policy Updates",
-            "10. Contact Information",
-          ].map((val, index) => (
-            <option key={index} value={val}>
-              {val}
-            </option>
-          ))}
-        </select>
+        />
       </div>
 
       {Sections.map((section, i) => {
         return (
-          <section 
-           id={`section-${section.id}`}
-          className="mt-6 sm:mt-16 px-4 md:px-20 lg:px-50 " key={i}>
+          <section
+            id={`section-${section.id}`}
+            className="mt-6 sm:mt-16 px-4 md:px-20 lg:px-50 "
+            key={i}
+          >
             <h1 className="text-xl sm:text-4xl text-custom-dark-grey/90 font-bold mb-2">
               {section.title}
             </h1>

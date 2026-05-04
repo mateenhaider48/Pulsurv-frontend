@@ -49,7 +49,7 @@ function SecurityCompliance(props: Props) {
           index={1}
         />
       </div>
-      <div className="h-auto w-auto  rounded-xl m-4 p-4  bg-custom-dark-grey/10 border border-1 border-custom-dark-grey/20">
+      <div className="h-auto w-full max-w-7xl mx-auto rounded-xl my-4 p-4  bg-custom-dark-grey/10 border border-1 border-custom-dark-grey/20">
         <div className="flex items-center justify-center gap-2 sm:gap-4">
           <div>
             <p className="text-sm sm:text-2xl font-700 font-bold leading-normal text-custom-dark-grey/90 text-center">

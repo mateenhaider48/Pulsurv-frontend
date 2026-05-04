@@ -83,7 +83,7 @@ function CompareFeatures() {
           team's needs.
         </p>
 
-        <div className="m-4 sm:m-20 md:m-10 w-auto bg-custom-white shadow-md rounded-xl ">
+        <div className="w-full max-w-7xl sm:mx-auto my-4 sm:my-20 md:my-10 w-auto bg-custom-white shadow-md rounded-xl ">
           <table className="w-full table-fixed">
             <colgroup>
               {[

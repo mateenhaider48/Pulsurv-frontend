@@ -1,7 +1,10 @@
+"use client"
 import { DoneIcon } from '@/components/svg-icons'
 import Button from '@/components/ui/Button'
+import { useRouter } from 'next/navigation'
 
 function LearnHowPulsurvHelp() {
+  const router = useRouter()
   return (
      <div className="bg-white">
          <div>
@@ -12,14 +15,16 @@ function LearnHowPulsurvHelp() {
              Discover how pulse surveys and AI-powered insights can transform the <br className='hidden md:block'/> way you collect feedback and make decisions.
            </p>
          </div>
-         <div className="flex items-center justify-center gap-4 m-5 mt-10">
+         <div className="flex items-center justify-center gap-4 m-5 sm:mt-10">
            <Button
              className="w-36 sm:w-48 h-8 sm:h-12 rounded-lg  py-2 sm:py-4 px-4 sm:px-8 leading-tight font-500 text-custom-white bg-custom-primary font-base border border-1 border-custom-primary"
              children="View Pricing"
+             onClick={()=>router.push("/pricing")}
            />
            <Button
              className="w-30 sm:w-48 h-8 sm:h-12 rounded-lg  py-2 sm:py-4 px-4 sm:px-8 leading-tight font-500 text-custom-secondary  font-base  border border-1 border-custom-secondary"
              children="Contact Us"
+             onClick={()=>router.push("/contact")}
            />
          </div>
          <div className="flex gap-2 justify-center py-10">

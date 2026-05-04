@@ -60,26 +60,26 @@ function PlatformAvailability(props: Props) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:flex p-4  justify-center items-center ">
+      <div className="grid grid-cols-1 place-items-center gap-2 sm:gap-4 sm:flex p-4 justify-center items-center ">
         <Card
           icon={WebPlatformIcon}
           title="Web Platform"
           text="Access from any modern browser"
-          className="w-55 sm:w-80 h-30 sm:h-44 bg-custom-white sm:block sm:mx-auto"
+          className="w-55 sm:w-80 h-30 sm:h-44 bg-custom-white"
           size="lg"
         />
         <Card
           icon={MobileIcon}
           title="iOS Mobile App"
           text="Native experience on iPhone and iPad"
-          className="w-55  sm:w-80 h-30 sm:h-44 bg-custom-white sm:block sm:mx-auto"
+          className="w-55  sm:w-80 h-30 sm:h-44 bg-custom-white"
           size="lg"
         />
         <Card
           icon={MobileIcon}
           title="Android Mobile App"
           text="Optimized for Android devices"
-          className="w-55 sm:w-80 h-30 sm:h-44 bg-custom-white sm:block sm:mx-auto"
+          className="w-55 sm:w-80 h-30 sm:h-44 bg-custom-white "
           size="lg"
         />
       </div>

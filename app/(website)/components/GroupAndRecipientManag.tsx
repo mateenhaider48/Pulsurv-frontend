@@ -32,7 +32,7 @@ function GroupAndRecipientManagement(props: Props) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 place-items-center md:grid-cols-3 lg:flex items-center justify-center gap-2 sm:gap-4 px-8">
+      <div className="grid grid-cols-2 place-items-center md:grid-cols-3 lg:flex items-center justify-center gap-2 sm:gap-4 px-8  ">
         <Card
           icon={RecipientIcon}
           title="Create Recipient Groups"
@@ -66,7 +66,7 @@ function GroupAndRecipientManagement(props: Props) {
         />
       </div>
 
-      <div className="h-auto w-auto  m-2 md:m-8 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
+      <div className="h-auto max-w-7xl w-full mx-auto my-2 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
         <div className="flex flex-1 m-4">
           <p className="font-semibold text-sm sm:text-base leading-normal text-custom-dark-grey/90">
             Recipient Groups

@@ -1,13 +1,16 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
+
 export default function PulsurvSurveys() {
   const router = useRouter()
+  const [open ,setOpen] = useState(false)
   return (
     <div className="bg-gradient-to-b from-[#F4F9FF] to-[#F4F9FF] ">
       <div className="flex flex-col md:flex-row  min-h-screen">
-        <div className="flex flex-col justify-center p-10 max-w-3xl ">
+        <div className="w-full max-w-7xl mx-auto flex flex-col justify-center p-10 max-w-3xl ">
           <p className="font-bold text-3xl sm:text-6xl   leading-auto text-custom-secondary">
             Pulse Surveys{" "}
             <span className="text-custom-dark-grey">
@@ -34,6 +37,14 @@ export default function PulsurvSurveys() {
               className="w-full sm:w-auto h-12 rounded-lg px-4 sm:px-8 leading-normal font-medium text-custom-secondary border border-custom-secondary"
               children="See Plans"
             />
+            {/* <Button
+            onClick={()=>setOpen(true)}
+              className="w-full sm:w-auto h-12 rounded-lg px-4 sm:px-8 leading-normal font-medium text-custom-secondary border border-custom-secondary"
+              children="Profile"
+            /> */}
+            {/* {
+              open && <Modal open={true} onClose={()=>setOpen(false)} children={"The error"}/>
+            } */}
           </div>
 
           <div className="flex flex-wrap mt-4 sm:mt-8 sm:mt-10 gap-6 sm:gap-8">

@@ -56,7 +56,7 @@ function CustomizeBrand() {
   return (
     <div>
       <div className="bg-[#F8F8F8] sm:pb-20">
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-12 mt-6  sm:mt-16 sm:ml-12 p-2 sm:p-10">
+        <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-12 mt-6  sm:mt-16  p-2 sm:p-10">
           <div className="w-full lg:w-1/2 h-full ">
             <p className="text-custom-dark-grey/90 text-base sm:text-md sm:text-xl font-bold mt-3">
               Customize Your Brand & Design
@@ -106,10 +106,10 @@ function CustomizeBrand() {
               alt="Real-time Data"
               className="w-full h-auto mt-4"
             />
-            <div className="w-[280px] md:w-[375px] rotate-0 opacity-100 absolute top-44 left-12 md:top-52 md:left-22">
+            <div className="w-[280px] md:w-[375px] rotate-0 opacity-100 absolute top-23 sm:top-44 left-8 sm:left-12 md:top-52 md:left-22">
               <img src="/images/colorChart.png" alt="Real-time Data" />
             </div>
-            <div className="w-46 md:w-[220px] bg-custom-white border-1 h-60 sm:h-64 top-19 left-60 md:left-84 border-custom-secondary rounded-xl z-50 rotate-0 opacity-100 absolute ">
+            <div className="w-46 md:w-[220px] bg-custom-white border-1 h-60 sm:h-64 top-10 sm:top-19 left-30 sm:left-40 md:left-64 border-custom-secondary rounded-xl z-10 rotate-0 opacity-100 absolute ">
               <p className="text-custom-dark-grey/30 px-2 pt-2 text-[10px]">
                 CHART COLORS 
               </p>
@@ -141,20 +141,20 @@ function CustomizeBrand() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 md:flex-row m-2 my-10  sm:m-20">
+      <div className="w-full max-w-7xl mx-auto  flex flex-col gap-4 md:flex-row m-2 my-10 ">
         {cards.map((card, index) => {
           return (
             <div
               key={index}
               className="w-full lg:w-1/3 bg-custom-dark-grey/4 p-4 sm:p-8 border border-custom-dark-grey/10 rounded-lg"
             >
-              <div className="w-12 h-12 bg-custom-primary rounded-lg p-1 sm:p-2 flex items-center justify-center">
-                <card.icon className="text-white w-6 h-6" />
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-custom-primary rounded-lg p-1 sm:p-2 flex items-center justify-center">
+                <card.icon className="text-white w-4 h-4 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-base sm:text-lg text-custom-dark-grey/90 font-bold mt-2">
+              <h3 className="text-sm sm:text-lg text-custom-dark-grey/90 font-bold mt-2">
                 {card.title}
               </h3>
-              <p className="text-sm text-custom-dark-grey/70 mt-2">
+              <p className="text-[12px] sm:text-sm text-custom-dark-grey/70 mt-2">
                 {card.desc}
               </p>
             </div>
