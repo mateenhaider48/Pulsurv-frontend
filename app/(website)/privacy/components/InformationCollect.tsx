@@ -368,7 +368,7 @@ function InformationCollect() {
                 {rights.map((item, index) => {
                   return (
                     <div key={index} className="h-auto w-full mt-3 flex mb-4 ">
-                      <div className="bg-custom-secondary mt-3 h-18 w-[5px] " />
+                      <div className="bg-custom-secondary mt-3 h-18 w-2 " />
                       <div>
                         <p className="px-6 py-1 sm:py-2 text-base sm:text-md text-custom-dark-grey/90  font-semibold">
                           {item?.title}

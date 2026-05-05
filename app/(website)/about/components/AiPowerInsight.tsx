@@ -59,7 +59,7 @@ function AiPowerInsight() {
                   <p className="text-sm sm:text-base text-custom-dark-grey/90 font-bold">
                     {card.title}
                   </p>
-                  <p className="text-[10px] sm:text-[12px] text-custom-dark-grey/70 sm:mt-2">
+                  <p className="text-[10 sm:text-[12 text-custom-dark-grey/70 sm:mt-2">
                     {card.text}
                   </p>
                 </div>
@@ -72,10 +72,10 @@ function AiPowerInsight() {
         <p className="p-2 md:p-6 text-sm sm:text-md text-custom-dark-grey/90  font-semibold">
           Built to Augment, Not Replace
         </p>
-        <p className="px-6 text-[10px] sm:text-sm  text-custom-dark-grey/40  font-medium">
+        <p className="px-6 text-[10 sm:text-sm  text-custom-dark-grey/40  font-medium">
          AI insights in Pulsurv are designed to surface patterns and save time, not to make decisions for you. The platform helps you understand your data faster, but the interpretation and action remain in your hands.
         </p>
-        <p className="px-6  mt-2  text-[10px] sm:text-sm   text-custom-dark-grey/40  font-medium">
+        <p className="px-6  mt-2  text-[10 sm:text-sm   text-custom-dark-grey/40  font-medium">
          We believe AI should be a tool that empowers people, not a black box that obscures understanding. That's why our AI features focus on clarity, transparency, and actionable output.
         </p>
       </div>

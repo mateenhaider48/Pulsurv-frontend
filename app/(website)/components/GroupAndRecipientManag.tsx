@@ -23,6 +23,7 @@ function GroupAndRecipientManagement(props: Props) {
 
   return (
     <div className="h-auto py-10  bg-[conic-gradient(from_144.43deg_at_50%_50%,_#FFE6E2_0deg,_#FFF2EF_360deg)]">
+      <div className="h-auto max-w-7xl w-full mx-auto">
       <div>
         <p className="font-bold text-lg sm:text-2xl leading-normal text-center text-custom-dark-grey/90 mt-8 sm:mt-14">
           Groups & Recipient Management
@@ -32,12 +33,12 @@ function GroupAndRecipientManagement(props: Props) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 place-items-center md:grid-cols-3 lg:flex items-center justify-center gap-2 sm:gap-4 px-8  ">
+      <div className="grid grid-cols-2 place-items-center md:grid-cols-2 lg:flex items-center justify-center gap-2 sm:gap-4 px-2 sm:px-8  ">
         <Card
           icon={RecipientIcon}
           title="Create Recipient Groups"
           text="Organize your audience into logical segments"
-          className="w-auto h-[162px] sm:h-[185px]"
+          className="w-auto h-40 sm:h-45"
           size="medium"
         />
 
@@ -45,7 +46,7 @@ function GroupAndRecipientManagement(props: Props) {
           icon={ImportIcon}
           title="Import via CSV"
           text="Bulk upload recipients with contact information"
-          className="w-auto h-[162px] sm:h-[185px]"
+          className="w-auto h-40 sm:h-45"
           size="medium"
         />
 
@@ -53,7 +54,7 @@ function GroupAndRecipientManagement(props: Props) {
           icon={EditIcon}
           title="Edit & Manage"
           text="Update group members and contact details easily"
-          className="w-auto h-[162px] sm:h-[185px]"
+          className="w-auto h-40 sm:h-45"
           size="medium"
         />
 
@@ -61,12 +62,12 @@ function GroupAndRecipientManagement(props: Props) {
           icon={ArrowIcon}
           title="Multi-Group Distribution"
           text="Send to one or multiple groups simultaneously"
-          className="w-full sm:w-[280px] h-[160px] sm:h-[185px]"
+          className="w-auto h-40 sm:h-45"
           size="medium"
         />
       </div>
 
-      <div className="h-auto max-w-7xl w-full mx-auto my-2 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
+      <div className="m-2 sm:m-8 p-2 md:p-6 rounded-xl  border border-1 border-custom-dark-grey/30 bg-custom-white">
         <div className="flex flex-1 m-4">
           <p className="font-semibold text-sm sm:text-base leading-normal text-custom-dark-grey/90">
             Recipient Groups
@@ -90,13 +91,13 @@ function GroupAndRecipientManagement(props: Props) {
                 <p className="font-medium text-sm sm:text-base leasing-tight sm:leading-normal text-custom-dark-grey/90 group-hover:text-white">
                   {val.title}
                 </p>
-                <span className="text-[8px] sm:text-sm leading-tight text-custom-dark-grey/70 group-hover:text-white">
+                <span className="text-xs sm:text-sm leading-tight text-custom-dark-grey/70 group-hover:text-white">
                   {val.recipient}
                 </span>
               </div>
 
               <div>
-                <p className="text-[10px] sm:text-sm text-custom-dark-grey/70 ml-4 sm:ml-10 p-3 group-hover:text-white cursor-pointer">
+                <p className="text-xs sm:text-sm text-custom-dark-grey/70 ml-4 sm:ml-10 p-3 group-hover:text-white cursor-pointer">
                   Edit
                 </p>
               </div>
@@ -104,6 +105,7 @@ function GroupAndRecipientManagement(props: Props) {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

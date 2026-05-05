@@ -47,7 +47,7 @@ function SendUsMessage() {
                 Full Name <span className="text-custom-red">*</span>
               </label>
               <input
-                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-normal tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="Enter your full name"
               />
             </div>
@@ -58,7 +58,7 @@ function SendUsMessage() {
               </label>
               <input
                 type="email"
-                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-normal tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="you@company.com"
               />
             </div>
@@ -68,7 +68,7 @@ function SendUsMessage() {
                 Organization Name <span className="text-custom-red">*</span>
               </label>
               <input
-                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors"
+                className="w-full border border-custom-dark-grey/10 px-3 sm:py-1 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-sm sm:text-base leading-normal tracking-normal outline-none focus:border-gray-400 transition-colors"
                 placeholder="Your company name"
               />
             </div>
@@ -79,7 +79,7 @@ function SendUsMessage() {
               </label>
               <textarea
                 rows={5}
-                className="w-full border border-custom-dark-grey/10 px-3 py-2 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-base leading-[32.5px] tracking-normal outline-none focus:border-gray-400 transition-colors resize-none"
+                className="w-full border border-custom-dark-grey/10 px-3 py-2 text-custom-dark-grey/90 rounded-xl font-sans font-normal text-base leading-normal tracking-normal outline-none focus:border-gray-400 transition-colors resize-none"
                 placeholder="Tell us about your needs or questions..."
               />
             </div>
@@ -105,11 +105,11 @@ function SendUsMessage() {
             return (
               <div
                 key={index}
-                className={`w-full lg:w-[395px] h-auto border ${
+                className={`w-full lg:w-100 h-auto border ${
                   index == 2
                     ? "border-[#BEDBFF] bg-[#BEDBFF]/30"
                     : "border-custom-dark-grey/20 group hover:bg-custom-primary transitions"
-                } rounded-lg opacity-100 gap-4 pt-4 px-[34px] pb-1`}
+                } rounded-lg opacity-100 gap-4 pt-4 px-6 pb-1`}
               >
                 <div className="flex flex-row gap-3">
                   <div

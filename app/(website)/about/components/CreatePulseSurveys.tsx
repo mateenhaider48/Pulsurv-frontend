@@ -74,35 +74,35 @@ function CreatePulseSurveys() {
           </ul>
         </div>
         <div className="relative">
-          <div className="w-[280px] md:w-[431px] bg-custom-white border border-[#E5E7EB] border-2 rounded-lg h-[195px] rotate-0 opacity-100 absolute top-76 left-6 lg:-left-22 border-[0.39px] rounded-[5.91px]">
-            <p className="text-sm sm:text-md font-semibold leading-normal ml-2 sm:ml-4 mt-2 text-custom-dark-grey/90">
+          <div className="w-94 bg-custom-white border border-[#E5E7EB] rounded-lg h-auto p-2  absolute top-76 left-6 lg:-left-22">
+            <p className="text-sm sm:text-md font-semibold leading-normal ml-1  text-custom-dark-grey/90">
               Survey Basics Info
             </p>
-            <p className="font-semibold text-[10px] sm:text-sm text-custom-dark-grey/90 ml-2 sm:ml-4 mt-2">
+            <p className="font-semibold text-xs sm:text-sm text-custom-dark-grey/90 ml-1 mt-2">
               Survey Name <span className="text-custom-red">*</span>
             </p>
             <input
               type="text"
               disabled
               value={"Enter survey name"}
-              className="w-[260px] md:w-[400px] border-1 text-[10px] text-sm  ml-2 sm:ml-4 text-custom-dark-grey/50 mt-1  border-[#E5E7EB] h-8 rotate-0 opacity-100 border-[0.59px] rounded-[5.91px] pt-[7.1px] pr-[9.46px] pb-[7.1px] pl-[9.46px]"
+              className="w-full border text-xs text-sm mx-1 text-custom-dark-grey/50 mt-1  border-custom-dark-grey/10 h-8 rotate-0 opacity-100 rounded-sm p-1"
             />
-            <p className="font-semibold text-sm sm:text-md text-custom-dark-grey/90 ml-4 mt-2">
+            <p className="font-semibold text-sm sm:text-md text-custom-dark-grey/90 ml-1 mt-1">
               Survey Description{" "}
-              <span className="text-custom-dark-grey/50 font-semibold text-[10px] sm:text-sm">
+              <span className="text-custom-dark-grey/50 font-semibold text-xs sm:text-sm">
                 (Optional){" "}
               </span>
             </p>
             <input
               disabled
               value="Add a description to help identify this survey internally"
-              className="w-[260px] md:w-[400px] text-[10px] sm:text-sm h-8 sm:h-12 ml-4 mt-1 border-1 border-[#E5E7EB] rounded-sm px-2 text-custom-dark-grey/50 leading-[28.39px] opacity-100"
+              className="w-full text-xs sm:text-sm h-8 sm:h-12 ml-1 mt-1 border-1 border-custom-dark-grey/10 rounded-sm px-1 text-custom-dark-grey/50  opacity-100"
             />
           </div>
           <img
             src="/images/pulseSurvey.png"
             alt="pulsurv"
-            className="w-[488px] rounded-xl p-2 h-[337px] mt-14 rotate-0 opacity-100"
+            className="w-140 h-85 rounded-3xl p-2  mt-14"
           />
         </div>
       </div>
@@ -117,8 +117,8 @@ function CreatePulseSurveys() {
            <div className="w-50 md:w-74 flex items-center justify-start bg-custom-white absolute top-68 left-20 sm:left-36 border border-[#E5E7EB] border-1 rounded-lg h-14 ">
               <div className="w-4 h-4 border-1  mx-2 border-custom-dark-grey/90"/>
               <div >
-                <p className="text-[11px] tracking-tight text-custom-dark-grey/90 font-semibold">All Employees</p>
-                <p className="text-[10px] tracking-tight text-custom-dark-grey/60">247 recipients</p>
+                <p className="text-sm tracking-tight text-custom-dark-grey/90 font-semibold">All Employees</p>
+                <p className="text-xs tracking-tight text-custom-dark-grey/60">247 recipients</p>
               </div>
               
           </div>
@@ -169,7 +169,7 @@ function CreatePulseSurveys() {
               return (
                 <div
                   key={index}
-                  className="w-auto h-12 sm:h-18 border-1 sm:border-[1.5px] border-custom-secondary rounded-lg p-2 mt-4  flex items-center gap-2"
+                  className="w-auto h-12 sm:h-18 border-1 sm:border-1 border-custom-secondary rounded-lg p-2 mt-4  flex items-center gap-2"
                 >
                   <div className="bg-custom-primary w-8 sm:w-12 h-8 sm:h-12 flex items-center justify-center rounded-full">
                     <card.icon className="w-3 sm:w-5 h-3 sm:h-5 text-white m-auto" />
@@ -178,7 +178,7 @@ function CreatePulseSurveys() {
                     <p className="text-custom-dark-grey/90 font-bold text-sm sm:text-base">
                       {card.title}
                     </p>
-                    <p className="text-custom-dark-grey/50 text-[10px] sm:text-[12px]">
+                    <p className="text-custom-dark-grey/50 text-xs sm:text-sm">
                       {card.description}
                     </p>
                   </div>

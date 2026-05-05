@@ -9,6 +9,7 @@ function SecurityPrivacyCompliance(props: Props) {
 
   return (
     <div className="bg-white">
+      <div className="w-full max-w-7xl mx-auto">
       <div>
         <p className="font-bold text-2xl md:text-4xl leading-normal text-center text-custom-dark-grey/90 mt-10">
           Security, Privacy & Compliance
@@ -17,7 +18,7 @@ function SecurityPrivacyCompliance(props: Props) {
           Enterprise-grade security and compliance built into every plan. Your data and <br className="hidden md:block"/> your respondents' privacy are our top priorities.
         </p>
       </div>
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4 my-10 md:my-20 justify-items-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4 p-4 md:my-20 justify-items-center ">
                     <Card
                       icon={GDRP}
                       title="GDPR Compliant"
@@ -51,6 +52,7 @@ function SecurityPrivacyCompliance(props: Props) {
                       index={2}
                     />
                   </div>
+    </div>
     </div>
   );
 }

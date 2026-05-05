@@ -2,8 +2,8 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="min-h-[180px] sm:min-h-[280px] bg-gradient-to-b from-white to-gray-50">
-      <div className="my-5 md:my-14">
+    <div className="min-h-40 sm:min-h-60 bg-gradient-to-b from-white to-gray-50">
+      <div className="my-14">
         <p className="text-custom-dark-grey/90 font-bold text-2xl md:text-5xl leading-normal tracking-normal text-center">
           Contact <span className="text-custom-secondary">Us</span>
         </p>

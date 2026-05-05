@@ -13,6 +13,7 @@ function OurCommitment() {
     ]
   return (
     <div className="bg-[#F9FAFB]">
+      <div className="w-full max-w-7xl pb-10 mx-auto">
       <p className="text-custom-dark-grey/90 font-bold text-center pt-4 sm:pt-10 text-2xl sm:text-4xl">
         Our Commitment
       </p>
@@ -21,7 +22,7 @@ function OurCommitment() {
         listen <br className="hidden md:block" /> better and act with integrity.
       </p>
 
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-28 py-8">
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-28 py-8">
         {
             cards.map((item,index)=>{
                 return(
@@ -31,13 +32,13 @@ function OurCommitment() {
                             </div>
 
                             <p className="text-custom-dark-grey/90 text-sm sm:text-md font-bold group-hover:text-custom-secondary">{item.title}</p>
-                            <p className="text-[10px] sm:text-sm p-2 text-custom-dark-grey/90 mb-2">{item.text}</p>
+                            <p className="text-xs sm:text-sm p-2 text-custom-dark-grey/90 mb-2">{item.text}</p>
                         </div>
                 )
             })
         }
       </div>
-      <div className="sm:w-full sm:max-w-7xl  m-2 sm:mx-auto bg-custom-primary p-6 rounded-lg  my-4 sm:my-10 ">
+      <div className="m-15 bg-custom-primary p-6 rounded-lg  my-4 sm:my-10 ">
         <p className="px-6 mt-4 text-base sm:text-md text-white text-center font-bold">
           We're Here to Help You Listen
         </p>
@@ -49,6 +50,7 @@ function OurCommitment() {
           protects their privacy, and earns your trust.
         </p>
       </div>
+    </div>
     </div>
   );
 }

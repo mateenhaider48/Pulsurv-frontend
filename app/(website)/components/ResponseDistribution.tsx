@@ -31,7 +31,7 @@ export function ResponseDistribution({text,barData}:{text?:string,barData: barDa
         {text || "Response Distribution"}
       </p>
 
-      <div className="h-[200px] sm:h-[240px] max-w-full">
+      <div className="h-40 sm:h-60 max-w-full">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={barData}
@@ -88,7 +88,7 @@ export function SentimentDonut() {
         Sentiment Analysis
       </p>
 
-      <div className="h-[240px]  w-full">
+      <div className="h-60  w-full">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
@@ -188,7 +188,7 @@ export function SentimentCircle({text}:{text?:string}) {
         {text || "Sentiment Analysis"}
       </p>
 
-      <div className="h-[240px] sm:h-[280px]  max-w-full">
+      <div className="h-40 sm:h-60  max-w-full">
         <ResponsiveContainer width="90%" height="90%">
           <PieChart>
             <Pie
@@ -260,14 +260,14 @@ export function MultipleChoiceChart({ text, barData }: { text?: string; barData:
   return (
     <div className="h-full w-full rounded-md p-1">
       <div className="flex flex-1">
-        <p className="text-[8px] font-semibold text-custom-dark-grey/90">
+        <p className="text-xs font-semibold text-custom-dark-grey/90">
           {text || "Response Distribution"}
         </p>
-        <div className="text-[8px] bg-custom-dark-grey/20 p-1 rounded-xl ml-auto font-semibold text-custom-dark-grey/90">
+        <div className="text-xs bg-custom-dark-grey/20 p-1 rounded-xl ml-auto font-semibold text-custom-dark-grey/90">
           Multiple Choices
         </div>
       </div>
-      <div className="h-[160px] sm:h-[120px] max-w-full">
+      <div className="h-30 sm:h-40 max-w-full">
         <ResponsiveContainer width="100%" height="90%">
           <BarChart
             data={barData}

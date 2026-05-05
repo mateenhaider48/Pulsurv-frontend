@@ -55,7 +55,7 @@ function UnderstandingUsageLimit() {
           return (
             <div
               key={plan.title}
-              className="w-[300px] sm:w-[330px] h-[280px] sm:h-[370px] border  rounded-lg border-custom-dark-grey/20"
+              className="w-70 sm:w-90  h-70 sm:h-90 border  rounded-lg border-custom-dark-grey/20"
             >
               {/* Icon */}
               <div className="w-10 sm:w-12 h-10 sm:h-12 ml-4 mt-3 sm:mt-6 bg-custom-primary rounded-xl flex items-center justify-center text-custom-white p-1 sm:p-2">
@@ -70,7 +70,7 @@ function UnderstandingUsageLimit() {
               </p>
 
               {/* Description */}
-              <p className="text-[12px] sm:text-sm text-custom-dark-grey/60 px-4 mt-1 sm:mt-2">
+              <p className="text-sm text-custom-dark-grey/60 px-4 mt-1 sm:mt-2">
                 {plan.text}
               </p>
 
@@ -82,7 +82,7 @@ function UnderstandingUsageLimit() {
                       <p className="font-semibold text-sm sm:text-base text-custom-primary/90">
                         {option.label}
                       </p>
-                      <p className="text-[12px] sm:text-sm text-custom-primary/60">
+                      <p className="text-sm text-custom-primary/60">
                         {option.value}
                       </p>
                     </div>

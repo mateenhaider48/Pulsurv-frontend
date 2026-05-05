@@ -10,8 +10,9 @@ import Card from "@/components/ui/Card";
 function SurveyDistChannels() {
   return (
     <div className="bg-custom-dark-grey/2 py-10 ">
+      <div className="w-full max-w-7xl mx-auto">
       <div
-        className="border-[1px]  rounded-lg  w-full max-w-7xl mx-auto h-auto m-10"
+        className="border-1  rounded-lg  h-auto m-2 sm:m-10"
         style={{
           borderImage: "linear-gradient(to bottom, #3333331A, #F75122) 1",
           borderImageSlice: 1,
@@ -30,39 +31,40 @@ function SurveyDistChannels() {
             icon={MobileIcon}
             title="In-App Delivery"
             text="Native integration"
-            className="w-[120px] sm:w-[160px] h-[110px] sm:h-[135px]"
+            className="w-30 sm:w-40 h-28 sm:h-34"
             size="small"
           />
           <Card
             icon={EmailIcon}
             title="Email"
             text="Direct to inbox"
-            className="w-[120px] sm:w-[160px] h-[110px] sm:h-[135px]"
+            className="w-30 sm:w-40 h-28 sm:h-34"
             size="small"
           />
           <Card
             icon={MessageIcon}
             title="Phone Messaging"
             text="SMS & WhatsApp"
-            className="w-[120px] sm:w-[160px] h-[110px] sm:h-[135px]"
+            className="w-30 sm:w-40 h-28 sm:h-34"
             size="small"
           />
           <Card
             icon={QRIcon}
             title="QR Code"
             text="Physical touch points"
-            className="w-[120px] sm:w-[160px] h-[110px] sm:h-[135px]"
+            className="w-30 sm:w-40 h-28 sm:h-34"
             size="small"
           />
           <Card
             icon={LinkIcon}
             title="Reusable Links"
             text="Share anywhere"
-            className="w-[120px] sm:w-[160px] h-[110px] sm:h-[135px]"
+            className="w-30 sm:w-40 h-28 sm:h-34"
             size="small"
           />
         </div>
       </div>
+    </div>
     </div>
   );
 }

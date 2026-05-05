@@ -24,8 +24,7 @@ export function CustomDropdown({
         onClick={() => setOpen((o) => !o)}
         className="
           w-full h-8 sm:h-10 px-1 sm:px-3 pr-2 sm:pr-8
-          bg-transparent border-1 sm:border-[1.5px] border-custom-secondary rounded-lg
-          text-[12px] sm:text-sm font-medium text-left
+          bg-transparent border-1 sm:border-1 border-custom-secondary rounded-lg text-sm font-medium text-left
           flex items-center cursor-pointer
           transition-all duration-150
           text-custom-dark-grey/90
@@ -46,9 +45,9 @@ export function CustomDropdown({
 
       {/* Menu */}
       {open && (
-        <ul className="absolute z-50 top-15 left-0 right-0  bg-white border-[1.5px]  rounded-lg overflow-hidden shadow-md animate-in fade-in slide-in-from-top-1 duration-100">
+        <ul className="absolute z-50 top-15 left-0 right-0  bg-white border-1.5  rounded-lg overflow-hidden shadow-md animate-in fade-in slide-in-from-top-1 duration-100">
           <p
-            className="text-[12px] sm:text-sm cursor-pointer px-3 py-1 font-bold text-custom-dark-grey/90 "
+            className="text-sm cursor-pointer px-3 py-1 font-bold text-custom-dark-grey/90 "
           >
             Table of Contents
           </p>
@@ -58,7 +57,7 @@ export function CustomDropdown({
               onClick={() => handleSelect(opt)}
               className={`
                 flex items-center gap-2 px-1 sm:px-3 py-1
-                text-[12px] sm:text-sm cursor-pointer hover:text-custom-secondary transition-colors duration-100
+                text-sm cursor-pointer hover:text-custom-secondary transition-colors duration-100
                 ${
                   selected?.value === opt.value
                     ? "font-medium text-custom-secondary"

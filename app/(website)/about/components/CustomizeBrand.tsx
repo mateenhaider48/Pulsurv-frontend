@@ -106,11 +106,11 @@ function CustomizeBrand() {
               alt="Real-time Data"
               className="w-full h-auto mt-4"
             />
-            <div className="w-[280px] md:w-[375px] rotate-0 opacity-100 absolute top-23 sm:top-44 left-8 sm:left-12 md:top-52 md:left-22">
+            <div className="w-auto rotate-0 opacity-100 absolute top-23 sm:top-44 left-8 sm:left-12 md:top-52 md:left-22">
               <img src="/images/colorChart.png" alt="Real-time Data" />
             </div>
-            <div className="w-46 md:w-[220px] bg-custom-white border-1 h-60 sm:h-64 top-10 sm:top-19 left-30 sm:left-40 md:left-64 border-custom-secondary rounded-xl z-10 rotate-0 opacity-100 absolute ">
-              <p className="text-custom-dark-grey/30 px-2 pt-2 text-[10px]">
+            <div className="w-46 md:w-50 bg-custom-white border-1 h-60 sm:h-64 top-10 sm:top-19 left-30 sm:left-40 md:left-64 border-custom-secondary rounded-xl z-10 rotate-0 opacity-100 absolute ">
+              <p className="text-custom-dark-grey/30 px-2 pt-2 text-xs">
                 CHART COLORS 
               </p>
               <div className="flex gap-1 px-2 items-end">
@@ -121,7 +121,7 @@ function CustomizeBrand() {
                 <div className="bg-[#F59E0B] border rounded-t-sm w-6 sm:w-8 h-10 sm:h-12" />
                 <div className="bg-[#EF4444] border rounded-t-sm w-6 sm:w-8 h-12 sm:h-16" />
               </div>
-              <p className="text-custom-dark-grey/30 flex items-center justify-center px-2 pt-2 text-[10px]">
+              <p className="text-custom-dark-grey/30 flex items-center justify-center px-2 pt-2 text-xs">
                 Bar Chart
               </p>
               <div className="flex items-center justify-center w-full h-24">
@@ -132,7 +132,7 @@ function CustomizeBrand() {
                 <LineChart color="#F3704B" />
                 <LineChart color="#3B82F6" />
               </div>
-              <p className="text-custom-dark-grey/30 flex items-center justify-center px-2 pb-1  text-[10px]">
+              <p className="text-custom-dark-grey/30 flex items-center justify-center px-2 pb-1  text-xs">
                 Line Chart
               </p>
             </div>
@@ -141,7 +141,7 @@ function CustomizeBrand() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto  flex flex-col gap-4 md:flex-row m-2 my-10 ">
+      <div className="w-full max-w-7xl mx-auto p-6 flex flex-col gap-4 md:flex-row m-2 my-10 ">
         {cards.map((card, index) => {
           return (
             <div
@@ -154,7 +154,7 @@ function CustomizeBrand() {
               <h3 className="text-sm sm:text-lg text-custom-dark-grey/90 font-bold mt-2">
                 {card.title}
               </h3>
-              <p className="text-[12px] sm:text-sm text-custom-dark-grey/70 mt-2">
+              <p className="text-sm sm:text-sm text-custom-dark-grey/70 mt-2">
                 {card.desc}
               </p>
             </div>

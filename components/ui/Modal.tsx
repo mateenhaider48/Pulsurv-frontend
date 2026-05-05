@@ -55,7 +55,7 @@ export const Modal: React.FC<ModalProps> = ({ open, onClose }) => {
             </label>
             <div
               onClick={() => inputRef.current?.click()}
-              className="w-20 h-20 rounded-full border-[1.5px] border-dashed border-custom-secondary flex items-center justify-center cursor-pointer overflow-hidden bg-zinc-50 dark:bg-zinc-800 hover:border-custom-secondary/70 transition-colors"
+              className="w-20 h-20 rounded-full border-1.5 border-dashed border-custom-secondary flex items-center justify-center cursor-pointer overflow-hidden bg-zinc-50 dark:bg-zinc-800 hover:border-custom-secondary/70 transition-colors"
             >
               {preview ? (
                 <img
@@ -86,7 +86,7 @@ export const Modal: React.FC<ModalProps> = ({ open, onClose }) => {
               placeholder="Enter name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="h-10 px-3 rounded-lg border-[1.5px] border-custom-secondary bg-transparent text-sm font-medium text-custom-dark-grey/90 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-custom-secondary/20 transition"
+              className="h-10 px-3 rounded-lg border-1.5 border-custom-secondary bg-transparent text-sm font-medium text-custom-dark-grey/90 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-custom-secondary/20 transition"
             />
           </div>
 

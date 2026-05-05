@@ -42,7 +42,7 @@ function AnalyticsAiReporting(props: Props) {
               <p className="font-bold text-sm sm:text-base text-custom-dark-grey/90">
                 AI Sentiment Analysis
               </p>
-              <span className="text-[10px] sm:text-sm leading-normal text-custom-dark-grey/70">
+              <span className="text-xs sm:text-sm leading-normal text-custom-dark-grey/70">
                 Automatically detect emotional tone across all survey responses
               </span>
             </div>
@@ -56,7 +56,7 @@ function AnalyticsAiReporting(props: Props) {
               <p className="font-bold text-sm sm:text-base text-custom-dark-grey/90">
                 AI Analytics Assistant
               </p>
-              <span className="text-[10px] sm:text-sm leading-normal text-custom-dark-grey/70">
+              <span className="text-xs sm:text-sm leading-normal text-custom-dark-grey/70">
                 Ask questions about your data and get instant insights
               </span>
             </div>
@@ -70,7 +70,7 @@ function AnalyticsAiReporting(props: Props) {
               <p className="font-bold text-sm sm:text-base text-custom-dark-grey/90">
                 Per-Question Analytics
               </p>
-              <span className="text-[10px] sm:text-sm leading-normal text-custom-dark-grey/70">
+              <span className="text-xs sm:text-sm leading-normal text-custom-dark-grey/70">
                 Visual charts and detailed breakdowns for every question
               </span>
             </div>
@@ -84,7 +84,7 @@ function AnalyticsAiReporting(props: Props) {
               <p className="font-bold text-sm sm:text-base text-custom-dark-grey/90">
                 Export Reports
               </p>
-              <span className="text-[10px] sm:text-sm leading-normal text-custom-dark-grey/70">
+              <span className="text-xs sm:text-sm leading-normal text-custom-dark-grey/70">
                 Download comprehensive reports in multiple formats
               </span>
             </div>
@@ -93,10 +93,10 @@ function AnalyticsAiReporting(props: Props) {
 
        
         <div className="flex flex-col gap-4 lg:ml-20">
-          <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
+          <div className="border h-auto w-full lg:w-140 rounded-md border-custom-dark-grey/60 shadow-md">
             <ResponseDistribution text="Response Distribution" barData={barData} />
           </div>
-          <div className="border h-auto w-full lg:w-[516px] rounded-md border-custom-dark-grey/60 shadow-md">
+          <div className="border h-auto w-full lg:w-140 rounded-md border-custom-dark-grey/60 shadow-md">
             <SentimentDonut />
           </div>
         </div>

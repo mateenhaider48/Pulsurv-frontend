@@ -43,9 +43,9 @@ function PlatformAvailability(props: Props) {
         <p className="font-bold text-md sm:text-2xl leading-normal text-center text-custom-white py-5">
           Platform Availability & Deployment
         </p>
-        <p className="text-[10px] sm:text-sm leading-tight text-center text-custom-white">
+        <p className="text-xs sm:text-sm leading-tight text-center text-custom-white">
           Distribute surveys via standard channels or deploy them as{" "}
-          <span className="text-[10px] p-1 sm:text-base font-bold text-custom-secondary">
+          <span className="text-xs p-1 sm:text-base font-bold text-custom-secondary">
             Self-hosted surveys
           </span>
           , giving enterprises full control over data storage, security, and compliance.
@@ -54,7 +54,7 @@ function PlatformAvailability(props: Props) {
           Available Platforms
         </p>
         <div className="h-8 sm:h-10 w-30 sm:w-60 block mx-auto bg-custom-secondary/20 rounded-xl flex items-center justify-center text-center ">
-          <span className="text-[10px] sm:text-base font-bold text-custom-secondary">
+          <span className="text-xs sm:text-base font-bold text-custom-secondary">
             Support Self-hosting
           </span>
         </div>
@@ -89,7 +89,7 @@ function PlatformAvailability(props: Props) {
         <p className="font-bold text-lg sm:text-2xl leading-tight sm:leading-normal text-center text-custom-white mt-6 sm:mt-14">
           Self-Hosted Deployment Option
         </p>
-        <p className="text-[10px] sm:text-sm  mt-1 tracking-1 leading-tight text-center text-custom-white">
+        <p className="text-xs sm:text-sm  mt-1 tracking-1 leading-tight text-center text-custom-white">
           Deploy surveys and assessments as Self-hosted surveys, giving enterprises full control over data storage, security, and compliance.
         </p>
       </div>
@@ -99,18 +99,18 @@ function PlatformAvailability(props: Props) {
         {cardData.map((item, index) => (
           <div
             key={index}
-            className="w-[450px] h-20 sm:h-32 border pr-2 border-[#BEDBFF] bg-custom-white rounded-xl sm:rounded-2xl"
+            className="w-120 h-20 sm:h-32 border pr-2 border-[#BEDBFF] bg-custom-white rounded-xl sm:rounded-2xl"
           >
             <div className="flex items-center ml-2 sm:ml-4 mt-2 sm:mt-4 gap-1 sm:gap-2">
               <item.icon/>
               <p className="text-custom-dark-grey/90 font-semibold text-sm sm:text-base">{item.title}</p>
             </div>
-            <p className="ml-2 sm:ml-4 mt-1 sm:mt-2 text-custom-dark-grey/60 text-[10px] sm:text-sm leading-tight">{item.text}</p>
+            <p className="ml-2 sm:ml-4 mt-1 sm:mt-2 text-custom-dark-grey/60 text-xs sm:text-sm leading-tight">{item.text}</p>
           </div>
         ))}
       </div>
       <div className="my-10">
-  <button className="w-44 sm:w-64 block mx-auto h-8 sm:h-12 bg-custom-secondary rounded-xl text-[10px] sm:text-sm leading-tight text-custom-white">Request Self-Hosted Setup</button>
+  <button className="w-44 sm:w-64 block mx-auto h-8 sm:h-12 bg-custom-secondary rounded-xl text-xs sm:text-sm leading-tight text-custom-white">Request Self-Hosted Setup</button>
       </div>
     
     </div>

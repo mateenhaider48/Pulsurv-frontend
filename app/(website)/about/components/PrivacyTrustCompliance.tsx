@@ -46,7 +46,7 @@ function PrivacyTrustCompliance() {
                   <p className="text-sm sm:text-base text-custom-dark-grey/90 font-bold">
                     {card.title}
                   </p>
-                  <p className="text-[10px] sm:text-[12px] text-custom-dark-grey/70 mt-1 sm:mt-2">
+                  <p className="text-xs sm:text-sm text-custom-dark-grey/70 mt-1 sm:mt-2">
                     {card.text}
                   </p>
                 </div>

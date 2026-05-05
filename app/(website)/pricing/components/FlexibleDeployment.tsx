@@ -40,7 +40,8 @@ const deploymentOptions = [
 
 function FlexibleDeployment() {
   return (
-    <div className="w-full h-auto bg-gradient-to-b from-white to-[#F9FAFB]">
+    <div className="bg-gradient-to-b from-white to-[#F9FAFB] pb-4">
+      <div className="w-full max-w-7xl mx-auto">
       <div>
         <p className="font-bold text-lg sm:text-4xl leading-normal text-center text-custom-dark-grey/90 mt-10">
           Flexible Deployment Options
@@ -52,7 +53,7 @@ function FlexibleDeployment() {
         </p>
       </div>
 
-      <div className="w-full max-w-7xl sm:mx-auto grid place-items-center grid-cols-1 md:flex gap-4 my-2  ">
+      <div className="grid place-items-center grid-cols-1 md:flex gap-4 p-2 my-2  ">
         {deploymentOptions.map((option) => {
           const Icon = option.icon;
           return (
@@ -80,7 +81,7 @@ function FlexibleDeployment() {
               </p>
 
               {/* Feature list */}
-              <ul className="mt-2 text-[12px] sm:text-lg mx-6 flex flex-col gap-1">
+              <ul className="mt-2 text-sm sm:text-lg mx-6 flex flex-col gap-1">
                 {option.features.map((feature) => (
                   <li
                     key={feature}
@@ -103,15 +104,16 @@ function FlexibleDeployment() {
           );
         })}
       </div>
-      <div className="flex border bg-[#EFF6FF] h-auto px-6 sm:px-14 py-5 max-w-7xl mx-auto  my-10 border-[#BEDBFF] rounded-lg items-center ">
+      <div className="flex border bg-[#EFF6FF] h-auto px-6 sm:px-14 py-5 m-8 my-10 border-[#BEDBFF] rounded-lg items-center ">
         <p className="text-sm sm:text-base font-semibold text-custom-dark-grey/80 leading-tight">
-          Need help deciding? <span className="text-[12px] sm:text-sm text-custom-dark-grey/60 ">
+          Need help deciding? <span className="text-sm text-custom-dark-grey/60 ">
           Our team can help you choose the right deployment option based on your
           security, compliance, and operational requirements.
         </span>
         </p>
         
       </div>
+    </div>
     </div>
   );
 }

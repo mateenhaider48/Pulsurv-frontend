@@ -40,13 +40,13 @@ function Feedback(props: Props) {
       <div className="flex items-center justify-center gap-4 m-5">
         <div className="flex items-center   gap-1 sm:gap-2">
           <DoneIcon />
-          <p className="text-custom-dark-grey/70  text-[10px] sm:text-sm">
+          <p className="text-custom-dark-grey/70  text-xs sm:text-sm">
             No credit card required
           </p>
         </div>
         <div className="flex items-center  gap-1 sm:gap-2">
           <DoneIcon />
-          <p className="text-custom-dark-grey/70 text-[10px] sm:text-sm">
+          <p className="text-custom-dark-grey/70 text-xs sm:text-sm">
             14-day free trial
           </p>
         </div>

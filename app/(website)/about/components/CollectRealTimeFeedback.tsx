@@ -23,9 +23,9 @@ function CollectRealTimeFeedback() {
   ];
   return (
     
-      <div className="m-2 p-[1px] rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
+      <div className="m-4 2xl:w-full 2xl:max-w-7xl 2xl:mx-auto p-0.5 rounded-xl bg-gradient-to-b from-[#E5E7EB] to-[#F3704B]">
         <div className="bg-white rounded-xl p-4 ">
-          <div className="w-full max-w-7xl mx-auto flex flex-1 flex-col md:flex-row items-center justify-between gap-2 sm:gap-4">
+          <div className=" flex flex-1 flex-col md:flex-row items-center justify-between gap-2 sm:gap-4">
             <div>
               <h1 className="text-custom-dark-grey/90 text-md sm:text-lg font-bold">
                 Collect Real-Time Feedback
@@ -55,7 +55,7 @@ function CollectRealTimeFeedback() {
                 alt="Real-time Data"
                 className="w-full h-auto mt-4"
               />
-               <div className="border h-44 sm:h-33 w-70 sm:w-full lg:w-100 xl:w-120  rounded-md bg-custom-white absolute z-10 top-38 md:top-48 lg:top-68 xl:top-78  border-custom-dark-grey/10 shadow-md">
+               <div className="border h-44 sm:h-48 w-70 sm:w-full lg:w-100 xl:w-120  rounded-md bg-custom-white absolute z-10 top-38 md:top-48 lg:top-68 xl:top-78  border-custom-dark-grey/10 shadow-md">
               <MultipleChoiceChart
                 text="Q3. Do you feel the company provides adequate mental health resources?"
                 barData={secondBarData}
@@ -67,14 +67,14 @@ function CollectRealTimeFeedback() {
           <p className="text-md sm:text-xl text-custom-dark-grey/90 font-bold mt-4">
             Analytics Overview — Final Results
           </p>
-          <div className="flex flex-col  gap-5 py-4 sm:flex-row  mb-5">
-            <div className="border h-auto w-full sm:w-[550px] rounded-md  border-custom-dark-grey/10 shadow-md">
+          <div className=" flex flex-col  gap-5 py-4 sm:flex-row  mb-5">
+            <div className="border h-auto w-full sm:w-150 rounded-md  border-custom-dark-grey/10 shadow-md">
               <ResponseDistribution
                 text="Safety Perception by Department"
                 barData={barData}
               />
             </div>
-            <div className="border h-auto w-full lg:w-[560px] rounded-md border-custom-dark-grey/10 shadow-md">
+            <div className="border h-auto w-full lg:w-150 rounded-md border-custom-dark-grey/10 shadow-md">
               <SentimentCircle text="Wellness Program Satisfaction" />
             </div>
           </div>

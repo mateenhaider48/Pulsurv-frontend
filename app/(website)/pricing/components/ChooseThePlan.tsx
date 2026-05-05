@@ -27,7 +27,7 @@ function ChooseThePlan(props: Props) {
           children="Get Started Free"
         />
         <Button
-          className="w-35 sm:w-48 h-10 sm:h-12 rounded-lg py-2 sm:py-4 px-4 sm:px-8 leading-normal font-500 text-custom-secondary border border-[1px] border-custom-secondary"
+          className="w-35 sm:w-48 h-10 sm:h-12 rounded-lg py-2 sm:py-4 px-4 sm:px-8 leading-normal font-500 text-custom-secondary border border-1 border-custom-secondary"
           children="Contact Sales"
           onClick={()=>router.push("/contact")}
         />

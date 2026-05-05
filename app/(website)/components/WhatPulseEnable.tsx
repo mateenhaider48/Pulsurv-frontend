@@ -35,7 +35,7 @@ function WhatPulseEnable() {
           return (
             <div
               key={index}
-              className="w-[300px] bg-white group border border-t-[0.67px] border-[#E5E7EB] hover:border-custom-secondary rounded-2xl p-6 text-left  transition duration-300"
+              className="w-90 bg-white group border border-t-0.5 border-[#E5E7EB] hover:border-custom-secondary rounded-2xl p-6 text-left  transition duration-300"
             >
               {/* Icon */}
               <div className="mb-4 w-16">

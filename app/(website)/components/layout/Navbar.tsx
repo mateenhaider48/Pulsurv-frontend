@@ -51,7 +51,6 @@ export default function Navbar() {
             })}
           </nav>
 
-          
           <div className="hidden z-10  md:flex gap-4 items-center">
             <Button
               className="text-custom-dark-grey/90 font-normal text-base"
@@ -61,10 +60,7 @@ export default function Navbar() {
               className="w-36 lg:w-40 h-12 rounded-2 bg-custom-primary px-4 py-3 leading-normal font-medium text-custom-white"
               children="Get Started"
             />
-          </div>
-          
-
-          
+          </div>          
           <button
             className="md:hidden flex flex-col justify-center items-center gap-1.5 w-6 sm:w-9 h-6 sm:h-9"
             onClick={() => setMenuOpen((prev) => !prev)}

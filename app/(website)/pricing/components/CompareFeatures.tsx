@@ -72,18 +72,18 @@ const plans = ["Starter", "Professional", "Enterprise"];
 
 function CompareFeatures() {
   return (
-    <div className="w-full bg-[#F9FAFB]">
-      <div>
-        <p className="font-bold text-lg sm:text-3xl leading-normal text-center text-custom-dark-grey/90">
+    <div className="bg-[#F9FAFB]">
+      <div className="w-full max-w-7xl mx-auto">
+        <p className="font-bold text-lg sm:text-3xl leading-normal mt-8 text-center text-custom-dark-grey/90">
           Compare Features Across Plans
         </p>
-        <p className="text-[12px] sm:text-base leading-tight text-center text-custom-dark-grey/90 mt-2">
+        <p className="text-sm sm:text-base leading-tight text-center text-custom-dark-grey/90 mt-2">
           All plans include core survey capabilities. Choose the tier that best
           fits your <br className="hidden md:block" />
           team's needs.
         </p>
 
-        <div className="w-full max-w-7xl sm:mx-auto my-4 sm:my-20 md:my-10 w-auto bg-custom-white shadow-md rounded-xl ">
+        <div className="m-2 sm:m-10 my-4 sm:my-20 md:my-10 w-auto bg-custom-white shadow-md rounded-xl ">
           <table className="w-full table-fixed">
             <colgroup>
               {[
@@ -96,7 +96,7 @@ function CompareFeatures() {
               ))}
             </colgroup>
 
-            <thead className="text-[10px] sm:text-sm text-custom-white">
+            <thead className="text-xs sm:text-sm text-custom-white">
               <tr>
                 <th className="p-2 sm:p-4 text-left bg-custom-primary rounded-tl-xl">
                   Features
@@ -126,9 +126,9 @@ function CompareFeatures() {
                   {section.features.map((feature) => (
                     <tr
                       key={feature.label}
-                      className="border-t border-custom-primary/10 text-[12px] text-custom-dark-grey/60 hover:bg-gray-50 transition"
+                      className="border-t border-custom-primary/10 text-sm text-custom-dark-grey/60 hover:bg-gray-50 transition"
                     >
-                      <td className="p-2 sm:p-4 text-[10px] sm:text-lg text-left">{feature.label}</td>
+                      <td className="p-2 sm:p-4 text-xs sm:text-lg text-left">{feature.label}</td>
                       {feature.plans.map((enabled, i) => (
                         <td key={i} className="p-2 sm:p-4">
                           <div className="flex justify-center">
